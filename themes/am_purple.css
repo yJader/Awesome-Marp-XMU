@@ -1,4 +1,4 @@
-/* @theme as_dark */
+/* @theme am_purple */
 
 @charset "UTF-8";
 @import 'default';
@@ -23,15 +23,16 @@
   --color-title: rgb(255, 255, 255);
   --color-footer: #8c8c8c;
   --color-navbar-font: rgb(108, 95, 91);
-  --color-few: #64875e;
+  --color-few: #627a1f;
   --color-quote: rgba(254, 176, 98, 0.1);
   --color-main: #211112;
-  --color-coverbg: #4b616c;
-  --color-much: #384951;
-  --color-trans: #8ea1ab;
-  --color-navbar-bg: #dfe4e7;
-  --color-code-bg: #eff2f3;
+  --color-coverbg: #954c81;
+  --color-much: #551645;
+  --color-trans: #af79a1;
+  --color-navbar-bg: #e4d2e0;
+  --color-code-bg: #f2e9ef;
 }
+
 
 section {
   font-family: var(--font-family-main);
@@ -81,7 +82,6 @@ ul li::marker {
   color: var(--color-much);
 }
 
-
 blockquote {
   border-left: 8px solid var(--color-much);
   padding: 10px 25px;
@@ -107,6 +107,8 @@ a {
   padding:0 .2rem;
   color: var(--color-main);
   font-family: var(--font-family-main);
+  /* text-decoration: underline; */
+  /* text-decoration-color: var(--color-few); */
 }
 a:hover {
   color: var(--color-much);
@@ -119,6 +121,7 @@ a::after {
   font-family: "FontAwesome";
   color: var(--color-much);
 }
+
 
 section::after {
   font-family: "FontAwesome";
@@ -215,7 +218,6 @@ em {
   font-style: normal;
 }
   
-
 img {
   max-width: 95% ;
   border-radius: 8px;
@@ -232,8 +234,6 @@ img[alt*='#c'] {
     display: block;
     margin: auto;
 }
-
-
 
 section.cover_a {
   width: 100%;
@@ -279,7 +279,6 @@ section.cover_a a::after {
   content: "";
 }
 
-
 section.cover_e {
   width: 100%;
   background: linear-gradient(108deg, white 70%,  var(--color-coverbg) 30%);
@@ -319,14 +318,14 @@ section.cover_e footer>img {
   transform: scale(1.2);
   background-color: rgba(255, 255, 255, 0);
   background-blend-mode: lighten;
-  filter: brightness(100%) contrast(0%) grayscale(70%);
+  filter: brightness(10%) contrast(40%) grayscale(0%);
 } 
 
 section.cover_e header>img {
   transform: scale(0.72);
   background-color: rgba(255, 255, 255, 0);
   background-blend-mode: lighten;
-  filter: brightness(100%) contrast(0%) grayscale(70%);
+  filter: brightness(10%) contrast(40%) grayscale(0%);
 } 
 
 section.cover_e a::after {
@@ -560,7 +559,6 @@ section.toc_a header {
   -webkit-text-stroke: 0.75px var(--color-navbar-font);
 }
 
-
 section.toc_b {
   width: 100%;
   background: linear-gradient(to right, white 6%, var(--color-coverbg) 6% 30%, white 30%);
@@ -624,9 +622,8 @@ section.toc_b img {
   background-blend-mode: lighten;  
   padding-top: 30px;
   width: 70%;
-  filter: brightness(100%) contrast(0%) grayscale(70%);
+  filter: brightness(40%) contrast(10%) grayscale(0%);
 }
-
 
 
 section.fglass ul {
@@ -640,8 +637,6 @@ section.fglass ul {
 
 
 section.cols2_ol_sq h2, section.cols2_ol_sq h3 {
-  /* top: 13%;
-  position: absolute; */
   margin-left: -2%;
 }
 
@@ -691,9 +686,8 @@ section.cols2_ol_sq ol li:hover::before, section.cols2_ol_sq ul li:hover::before
   transform: rotate(360deg);
 } 
 
+
 section.cols2_ol_ci h2, section.cols2_ol_ci h3 {
-  /* top: 13%;
-  position: absolute; */
   margin-left: -2%;
 }
 
@@ -743,9 +737,8 @@ section.cols2_ol_ci ol li:hover::before, section.cols2_ol_ci ul li:hover::before
   transform: rotate(360deg);
 } 
 
+
 section.cols2_ul_sq h2, section.cols2_ul_sq h3 {
-  /* top: 13%;
-  position: absolute; */
   margin-left: -2%;
 }
 
@@ -783,12 +776,10 @@ section.cols2_ul_sq ul li:before {
   background-color: var(--color-much);
   height: 10px;
   width: 10px;
-  /* border-radius: 50%; */
 }
 
+
 section.cols2_ul_ci h2, section.cols2_ul_ci h3 {
-  /* top: 13%;
-  position: absolute; */
   margin-left: -2%;
 }
 
@@ -799,7 +790,6 @@ section.cols2_ul_ci p {
 
 section.cols2_ul_ci ul {
   left: 1%;
-  /* margin-left: -2%; */
   width: 98%;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1018,7 +1008,6 @@ section.bq-blue blockquote>p::before, section.bq-red blockquote>p::before, secti
 }
 
 section.bq-blue blockquote>p:nth-child(1), section.bq-red blockquote>p:nth-child(1), section.bq-green blockquote>p:nth-child(1), section.bq-purple blockquote>p:nth-child(1), section.bq-black blockquote>p:nth-child(1) {
-  /* background-color: rgb(129, 161, 193); */
   margin-bottom: -1px;
   line-height: 2rem;
   padding: 0.5% 0.5% 0.5% 1.5%;
@@ -1153,6 +1142,7 @@ section.lastpage a::after, section.lastpage::after {
   color: white;
 }
 
+
 section.navbar header {
   background-color: var(--color-navbar-bg);
   width: 100%;
@@ -1191,7 +1181,6 @@ section.navbar header>em>strong {
   margin-left: -20px;
 }
 
-
 section.trans  {
   background-color: var(--color-trans);
 }
@@ -1208,6 +1197,7 @@ section.caption .caption {
   font-size: smaller;
   color: var(--color-footer);
 }
+
 
 table {
   border-collapse: collapse;
@@ -1227,11 +1217,9 @@ th, thead {
   font-size: 105%;
   padding: 6px;
 }
-
 th, thead:first-child {
   border-bottom: 3px solid var(--color-main);
 }
-
 table tr:nth-child(2n) {
   background-color: white;
 }

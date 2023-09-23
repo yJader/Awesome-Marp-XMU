@@ -1,4 +1,4 @@
-/* @theme as_blue */
+/* @theme am_dark */
 
 @charset "UTF-8";
 @import 'default';
@@ -23,16 +23,15 @@
   --color-title: rgb(255, 255, 255);
   --color-footer: #8c8c8c;
   --color-navbar-font: rgb(108, 95, 91);
-  --color-few: #91a814;
+  --color-few: #64875e;
   --color-quote: rgba(254, 176, 98, 0.1);
-  --color-main: #041d22;
-  --color-coverbg: #2c9cb1;
-  --color-much: #1482a8;
-  --color-trans: #72bdcb;
-  --color-navbar-bg: #d0e9ee;
-  --color-code-bg: #e8f4f6;
+  --color-main: #211112;
+  --color-coverbg: #4b616c;
+  --color-much: #384951;
+  --color-trans: #8ea1ab;
+  --color-navbar-bg: #dfe4e7;
+  --color-code-bg: #eff2f3;
 }
-
 
 section {
   font-family: var(--font-family-main);
@@ -64,7 +63,6 @@ header {
   top: 12px;
 }
 
-/* 列表 */
 
 ol {
   line-height: 1.4rem;
@@ -82,6 +80,7 @@ ul.c {list-style-type:square;}
 ul li::marker {
   color: var(--color-much);
 }
+
 
 blockquote {
   border-left: 8px solid var(--color-much);
@@ -127,6 +126,7 @@ section::after {
   margin-right: -10px;
   margin-bottom: -14px;
   content: attr(data-marpit-pagination) "\f101 " attr(data-marpit-pagination-total); 
+  /* f518 f135 f101 f0e7 */
   letter-spacing: 3px;
   padding: 4px 10px;
   border-radius: 5px;
@@ -214,6 +214,7 @@ em {
   font-size: 0.9rem;
   font-style: normal;
 }
+  
 
 img {
   max-width: 95% ;
@@ -231,6 +232,7 @@ img[alt*='#c'] {
     display: block;
     margin: auto;
 }
+
 
 
 section.cover_a {
@@ -317,14 +319,14 @@ section.cover_e footer>img {
   transform: scale(1.2);
   background-color: rgba(255, 255, 255, 0);
   background-blend-mode: lighten;
-  filter: brightness(0%) contrast(70%) grayscale(100%);
+  filter: brightness(100%) contrast(0%) grayscale(70%);
 } 
 
 section.cover_e header>img {
   transform: scale(0.72);
   background-color: rgba(255, 255, 255, 0);
   background-blend-mode: lighten;
-  filter: brightness(0%) contrast(70%) grayscale(100%);
+  filter: brightness(100%) contrast(0%) grayscale(70%);
 } 
 
 section.cover_e a::after {
@@ -349,7 +351,6 @@ section.cover_e header {
   text-align: center;
   vertical-align:middle; 
 }
-
 
 section.cover_b h1 {
   background-color: var(--color-coverbg);
@@ -401,7 +402,6 @@ section.cover_b strong {
 section.cover_b a::after {
   content: "";
 }
-
 
 section.cover_c {
   width: 100%;
@@ -624,8 +624,10 @@ section.toc_b img {
   background-blend-mode: lighten;  
   padding-top: 30px;
   width: 70%;
-  filter: brightness(30%) contrast(70%) grayscale(100%);
+  filter: brightness(100%) contrast(0%) grayscale(70%);
 }
+
+
 
 section.fglass ul {
   padding: 20px 20px 20px 60px;
@@ -635,6 +637,7 @@ section.fglass ul {
   background-color: white;
   box-shadow: 1px 1px 12px  rgb(215, 224, 235);
 }
+
 
 section.cols2_ol_sq h2, section.cols2_ol_sq h3 {
   /* top: 13%;
@@ -688,8 +691,9 @@ section.cols2_ol_sq ol li:hover::before, section.cols2_ol_sq ul li:hover::before
   transform: rotate(360deg);
 } 
 
-
 section.cols2_ol_ci h2, section.cols2_ol_ci h3 {
+  /* top: 13%;
+  position: absolute; */
   margin-left: -2%;
 }
 
@@ -1014,6 +1018,7 @@ section.bq-blue blockquote>p::before, section.bq-red blockquote>p::before, secti
 }
 
 section.bq-blue blockquote>p:nth-child(1), section.bq-red blockquote>p:nth-child(1), section.bq-green blockquote>p:nth-child(1), section.bq-purple blockquote>p:nth-child(1), section.bq-black blockquote>p:nth-child(1) {
+  /* background-color: rgb(129, 161, 193); */
   margin-bottom: -1px;
   line-height: 2rem;
   padding: 0.5% 0.5% 0.5% 1.5%;
@@ -1215,21 +1220,26 @@ table {
 table code {
   font-size: 0.7rem;
 }
+
 th, thead {
   height: 40px;
   border-top: 3px solid var(--color-main);
   font-size: 105%;
   padding: 6px;
 }
+
 th, thead:first-child {
   border-bottom: 3px solid var(--color-main);
 }
+
 table tr:nth-child(2n) {
   background-color: white;
 }
+
 tbody:last-child {
   border-bottom: 3px solid var(--color-main)
 }
+
 table > thead > tr > th,
 table > thead > tr > td,
 table > tbody > tr > th,

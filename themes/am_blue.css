@@ -1,4 +1,4 @@
-/* @theme as_red */
+/* @theme am_blue */
 
 @charset "UTF-8";
 @import 'default';
@@ -23,15 +23,16 @@
   --color-title: rgb(255, 255, 255);
   --color-footer: #8c8c8c;
   --color-navbar-font: rgb(108, 95, 91);
-  --color-few: #53a7a0;
+  --color-few: #91a814;
   --color-quote: rgba(254, 176, 98, 0.1);
-  --color-main: #211112;
-  --color-coverbg: #a7535a;
-  --color-much: #864248;
-  --color-trans: #b9757b;
-  --color-navbar-bg: #edddde;
-  --color-code-bg: #f6eeef;
+  --color-main: #041d22;
+  --color-coverbg: #2c9cb1;
+  --color-much: #1482a8;
+  --color-trans: #72bdcb;
+  --color-navbar-bg: #d0e9ee;
+  --color-code-bg: #e8f4f6;
 }
+
 
 section {
   font-family: var(--font-family-main);
@@ -63,6 +64,7 @@ header {
   top: 12px;
 }
 
+/* 列表 */
 
 ol {
   line-height: 1.4rem;
@@ -153,7 +155,6 @@ footer::after {
   content: "";
 }
 
-
 .MathJax {
   font-size: 0.95rem;
   font-family: 'Adobe Garamond';
@@ -213,7 +214,7 @@ em {
   font-size: 0.9rem;
   font-style: normal;
 }
-  
+
 img {
   max-width: 95% ;
   border-radius: 8px;
@@ -275,6 +276,7 @@ section.cover_a strong {
 section.cover_a a::after {
   content: "";
 }
+
 
 section.cover_e {
   width: 100%;
@@ -348,6 +350,7 @@ section.cover_e header {
   vertical-align:middle; 
 }
 
+
 section.cover_b h1 {
   background-color: var(--color-coverbg);
   padding: 30px;
@@ -398,6 +401,7 @@ section.cover_b strong {
 section.cover_b a::after {
   content: "";
 }
+
 
 section.cover_c {
   width: 100%;
@@ -500,6 +504,7 @@ section.cover_d footer {
   bottom: 30px;
 }
 
+
 section.toc_a ul {
   list-style-type: none; 
   padding: 30px;
@@ -554,6 +559,7 @@ section.toc_a header {
   -webkit-text-fill-color: transparent;   
   -webkit-text-stroke: 0.75px var(--color-navbar-font);
 }
+
 
 section.toc_b {
   width: 100%;
@@ -621,7 +627,6 @@ section.toc_b img {
   filter: brightness(30%) contrast(70%) grayscale(100%);
 }
 
-
 section.fglass ul {
   padding: 20px 20px 20px 60px;
   margin-left: -25px;
@@ -631,8 +636,9 @@ section.fglass ul {
   box-shadow: 1px 1px 12px  rgb(215, 224, 235);
 }
 
-
 section.cols2_ol_sq h2, section.cols2_ol_sq h3 {
+  /* top: 13%;
+  position: absolute; */
   margin-left: -2%;
 }
 
@@ -681,6 +687,7 @@ section.cols2_ol_sq ol li:hover::before, section.cols2_ol_sq ul li:hover::before
   -ms-transform: rotate(360deg); 
   transform: rotate(360deg);
 } 
+
 
 section.cols2_ol_ci h2, section.cols2_ol_ci h3 {
   margin-left: -2%;
@@ -732,8 +739,9 @@ section.cols2_ol_ci ol li:hover::before, section.cols2_ol_ci ul li:hover::before
   transform: rotate(360deg);
 } 
 
-
 section.cols2_ul_sq h2, section.cols2_ul_sq h3 {
+  /* top: 13%;
+  position: absolute; */
   margin-left: -2%;
 }
 
@@ -744,6 +752,7 @@ section.cols2_ul_sq p {
 
 section.cols2_ul_sq ul {
   left: 1%;
+  /* margin-left: -2%; */
   width: 98%;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -770,10 +779,12 @@ section.cols2_ul_sq ul li:before {
   background-color: var(--color-much);
   height: 10px;
   width: 10px;
+  /* border-radius: 50%; */
 }
 
-
 section.cols2_ul_ci h2, section.cols2_ul_ci h3 {
+  /* top: 13%;
+  position: absolute; */
   margin-left: -2%;
 }
 
@@ -784,6 +795,7 @@ section.cols2_ul_ci p {
 
 section.cols2_ul_ci ul {
   left: 1%;
+  /* margin-left: -2%; */
   width: 98%;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -812,7 +824,6 @@ section.cols2_ul_ci ul li:before {
   width: 10px;
   border-radius: 50%;
 }
-
 
 section.cols-2 {
   overflow: visible;
@@ -902,7 +913,6 @@ section.cols-3 .rimg {
   align-items: center;  
   justify-content: center;
 }
-
 
 section.cols-2-73 {
   overflow: visible;
@@ -1176,6 +1186,7 @@ section.navbar header>em>strong {
   margin-left: -20px;
 }
 
+
 section.trans  {
   background-color: var(--color-trans);
 }
@@ -1184,6 +1195,7 @@ section.trans h2{
   color: var(--color-title);
   font-size: 2rem;
 }
+
 
 section.caption .caption {
   padding-top: 20px;
@@ -1203,26 +1215,21 @@ table {
 table code {
   font-size: 0.7rem;
 }
-
 th, thead {
   height: 40px;
   border-top: 3px solid var(--color-main);
   font-size: 105%;
   padding: 6px;
 }
-
 th, thead:first-child {
   border-bottom: 3px solid var(--color-main);
 }
-
 table tr:nth-child(2n) {
   background-color: white;
 }
-
 tbody:last-child {
   border-bottom: 3px solid var(--color-main)
 }
-
 table > thead > tr > th,
 table > thead > tr > td,
 table > tbody > tr > th,
@@ -1231,7 +1238,6 @@ table > tfoot > tr > th,
 table > tfoot > tr > td {
   border: 0px solid white;
 }
-
 
 .hljs {
   display: block;

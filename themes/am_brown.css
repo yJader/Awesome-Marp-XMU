@@ -1,11 +1,10 @@
-/* @theme as_purple */
+/* @theme am_brown */
 
 @charset "UTF-8";
 @import 'default';
 @import 'https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.min.css';
 @auto-scaling true;
 @import url(https://fonts.bunny.net/css?family=charm:700);
-
 
 :root{
   --font-family-main: 'Latin Modern Math','Adobe Garamond','方正宋刻本秀楷简体','华文中宋','霞鹜文楷 屏幕阅读版';  
@@ -20,19 +19,18 @@
   --font-size-footer: 22px;
   --font-size-page: 12px;
   --font-size-code: 22px;
+  --color-main: #1c2a39;
   --color-title: rgb(255, 255, 255);
+  --color-much: #9a7641;
+  --color-few: #894cb2;
+  --color-trans: #cda974;
   --color-footer: #8c8c8c;
   --color-navbar-font: rgb(108, 95, 91);
-  --color-few: #627a1f;
-  --color-quote: rgba(254, 176, 98, 0.1);
-  --color-main: #211112;
-  --color-coverbg: #954c81;
-  --color-much: #551645;
-  --color-trans: #af79a1;
-  --color-navbar-bg: #e4d2e0;
-  --color-code-bg: #f2e9ef;
+  --color-navbar-bg: #f5ede2;
+  --color-background: rgba(254, 176, 98, 0.1);
+  --color-code-bg: #f9f4ee;
+  --color-coverbg: #b2894c;
 }
-
 
 section {
   font-family: var(--font-family-main);
@@ -64,7 +62,6 @@ header {
   top: 12px;
 }
 
-
 ol {
   line-height: 1.4rem;
   padding-left: 15%; 
@@ -86,7 +83,7 @@ blockquote {
   border-left: 8px solid var(--color-much);
   padding: 10px 25px;
   border-radius: 8px;
-  background-color: var(--color-quote);
+  background-color: var(--color-background);
   font-size: 0.9rem;
   font-family: var(--font-family-main);
 }
@@ -121,7 +118,6 @@ a::after {
   font-family: "FontAwesome";
   color: var(--color-much);
 }
-
 
 section::after {
   font-family: "FontAwesome";
@@ -170,7 +166,6 @@ pre {
   padding: 28px;
   line-height: 115%;
   overflow: auto;  
-  font-size: var(--font-size-footer);
   font-size: 0.9rem;
 }
 
@@ -234,6 +229,7 @@ img[alt*='#c'] {
     display: block;
     margin: auto;
 }
+
 
 section.cover_a {
   width: 100%;
@@ -318,14 +314,14 @@ section.cover_e footer>img {
   transform: scale(1.2);
   background-color: rgba(255, 255, 255, 0);
   background-blend-mode: lighten;
-  filter: brightness(10%) contrast(40%) grayscale(0%);
+  filter: brightness(0%) contrast(70%) grayscale(100%);
 } 
 
 section.cover_e header>img {
   transform: scale(0.72);
   background-color: rgba(255, 255, 255, 0);
   background-blend-mode: lighten;
-  filter: brightness(10%) contrast(40%) grayscale(0%);
+  filter: brightness(0%) contrast(70%) grayscale(100%);
 } 
 
 section.cover_e a::after {
@@ -503,7 +499,6 @@ section.cover_d footer {
   bottom: 30px;
 }
 
-
 section.toc_a ul {
   list-style-type: none; 
   padding: 30px;
@@ -622,9 +617,8 @@ section.toc_b img {
   background-blend-mode: lighten;  
   padding-top: 30px;
   width: 70%;
-  filter: brightness(40%) contrast(10%) grayscale(0%);
+  filter: brightness(30%) contrast(70%) grayscale(100%);
 }
-
 
 section.fglass ul {
   padding: 20px 20px 20px 60px;
@@ -634,7 +628,6 @@ section.fglass ul {
   background-color: white;
   box-shadow: 1px 1px 12px  rgb(215, 224, 235);
 }
-
 
 section.cols2_ol_sq h2, section.cols2_ol_sq h3 {
   margin-left: -2%;
@@ -686,7 +679,6 @@ section.cols2_ol_sq ol li:hover::before, section.cols2_ol_sq ul li:hover::before
   transform: rotate(360deg);
 } 
 
-
 section.cols2_ol_ci h2, section.cols2_ol_ci h3 {
   margin-left: -2%;
 }
@@ -737,7 +729,6 @@ section.cols2_ol_ci ol li:hover::before, section.cols2_ol_ci ul li:hover::before
   transform: rotate(360deg);
 } 
 
-
 section.cols2_ul_sq h2, section.cols2_ul_sq h3 {
   margin-left: -2%;
 }
@@ -749,7 +740,6 @@ section.cols2_ul_sq p {
 
 section.cols2_ul_sq ul {
   left: 1%;
-  /* margin-left: -2%; */
   width: 98%;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -908,6 +898,7 @@ section.cols-3 .rimg {
   justify-content: center;
 }
 
+
 section.cols-2-73 {
   overflow: visible;
   display: grid;
@@ -1008,6 +999,7 @@ section.bq-blue blockquote>p::before, section.bq-red blockquote>p::before, secti
 }
 
 section.bq-blue blockquote>p:nth-child(1), section.bq-red blockquote>p:nth-child(1), section.bq-green blockquote>p:nth-child(1), section.bq-purple blockquote>p:nth-child(1), section.bq-black blockquote>p:nth-child(1) {
+  /* background-color: rgb(129, 161, 193); */
   margin-bottom: -1px;
   line-height: 2rem;
   padding: 0.5% 0.5% 0.5% 1.5%;
@@ -1142,7 +1134,6 @@ section.lastpage a::after, section.lastpage::after {
   color: white;
 }
 
-
 section.navbar header {
   background-color: var(--color-navbar-bg);
   width: 100%;
@@ -1217,9 +1208,11 @@ th, thead {
   font-size: 105%;
   padding: 6px;
 }
+
 th, thead:first-child {
   border-bottom: 3px solid var(--color-main);
 }
+
 table tr:nth-child(2n) {
   background-color: white;
 }
@@ -1236,6 +1229,7 @@ table > tfoot > tr > th,
 table > tfoot > tr > td {
   border: 0px solid white;
 }
+
 
 .hljs {
   display: block;
