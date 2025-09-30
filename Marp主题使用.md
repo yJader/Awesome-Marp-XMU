@@ -4,43 +4,39 @@ theme: am_xmu
 size: 16:9
 header: "Marp 主题使用"
 # title: "Marp 主题使用"
-footer: "亦瑾"
+footer: "\ *亦瑾* &nbsp; *2025年09月30日*"
 headingDivider: [2] # 自动根据标题级别添加分割线
 ---
 
-<!-- markdownlint-disable MD029 -->
+<!-- markdownlint-disable MD029 MD001 -->
+<!-- _class: cover_e -->
+<!-- _header: "![](./themes/assets/xmu_logo.svg)" -->
+
+<!-- _footer: "![](./themes/assets/xmu_slogan.svg)" -->
 
 # Marp主题使用
 
-> 在配置和修改Awesome Marp主题时, 碰到了一些坑点, 记录一下
->
-> 其实这个markdown也是用Marp写的, 可以预览试试XD
+###### “用法简单、功能全面的个性化 PPT 模板”
+
+在配置和修改Awesome Marp主题时, 碰到了一些坑点, 记录一下
+其实这个markdown也是用Marp写的, 可以预览试试XD
 
 ## Marp for VS Code 使用
 
 1. 安装`Marp for VS Code`插件
 2. 配置`.vscode/settings.json`文件, 指定主题文件路径(可以参考该仓库下的[setting.json](./.vscode/settings.json))
-
----
-
 3. 在Markdown文件的YAML头部指定主题, 例如
 
     ```markdown
     ---
-
     marp: true
     # 选择am_xmu主题
     theme: am_xmu
-    size: 16:9
-    header: "这是页眉, 我一般放PPT标题"
-    title: "这是标题, 效果等于`# xxx`"
-    footer: "这是页脚, 我一般放作者名" 
-    headingDivider: [2] # 自动根据标题级别添加分割线
-
     ---
     ```
 
 4. 开始编写(可以提示AI使用Marp语法编写PPT, 高效快速)
+    - 样式可以参考[Awesome Marp主题说明](./files/AwesomeMarp_xmu.md)
 
 ## 主题编辑
 
@@ -69,3 +65,7 @@ yb @ webviewElement.ts:762
 H.onmessage @ webviewElement.ts:518
 index.html:1  GET https://file+.vscode-resource.vscode-cdn.net/Users/jader/Work/workspace/vscode/Awesome-Marp-XMU/assets/xmu_logo.svg 404 (Not Found)
 ```
+
+---
+<!-- _class: lastpage -->
+###### Thank You
