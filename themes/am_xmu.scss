@@ -3,11 +3,40 @@
 @import "am_template";
 
 :root {
+  /* xmu主题色 */
+  /* 校徽 */
+  --color-xmu-blue: #2C3563;
+  /* 厦门大学100周年校庆视觉识别系统手册-厦大蓝 */
+  /* 
+  层级	厦大蓝 RGB	厦大蓝 HEX
+  100%	R0 G60 B136	#003C88
+  90%	R25 G80 B148	#195094
+  80%	R51 G99 B160	#3363A0
+  70%	R77 G119 B172	#4D77AC
+  60%	R102 G138 B184	#668AB8
+  50%	R128 G158 B196	#809EC4
+  40%	R153 G177 B207	#99B1CF
+  30%	R178 G196 B219	#B2C4DB
+  20%	R204 G216 B231	#CCD8E7
+  10%	R230 G236 B243	#E6ECF3
+  */
+  --color-xmu-blue-100: #003C88;
+  --color-xmu-blue-90: #195094;
+  --color-xmu-blue-80: #3363A0;
+  --color-xmu-blue-70: #4D77AC;
+  --color-xmu-blue-60: #668AB8;
+  --color-xmu-blue-50: #809EC4;
+  --color-xmu-blue-40: #99B1CF;
+  --color-xmu-blue-30: #B2C4DB;
+  --color-xmu-blue-20: #CCD8E7;
+  --color-xmu-blue-10: #E6ECF3;
+
+
   /* 代码块背景色 */
   --color-code-bg: #e8f4f6;
 
   /* 封面页背景色：用于各种封面样式的背景渐变 */
-  --color-coverbg: #2c9cb1;
+  --color-coverbg: var(--color-xmu-blue-100);
 
   /* 少量元素强调色：用于代码边框、滚动条等细节元素 */
   --color-few: #91a814;
@@ -31,10 +60,10 @@
   --color-quote: rgba(254, 176, 98, 0.1);
 
   /* 一级标题颜色：h1标题的文字颜色 */
-  --color-title: #2c3563;
+  --color-title: rgb(255, 255, 255);
 
   /* 过渡色：用于特殊过渡效果 */
-  --color-trans: #72bdcb;
+  --color-trans: var(--color-xmu-blue-70);
 
   /* 图像滤镜效果 */
   --filter-b: brightness(30%) contrast(70%) grayscale(100%);
@@ -51,7 +80,7 @@ section::before {
   width: 200px;
   height: 60px;
 
-  background-image: url("themes/assets/xmu_logo.svg");
+  background-image: url("themes/assets/xmu_slogan.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top right;
@@ -65,4 +94,40 @@ section.cover_d::before,
 section.cover_e::before,
 section.lastpage::before {
   content: none;
+}
+
+/*
+section.cover_e footer {
+  height: 128px;
+  width: 26%;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  left: 72%;
+  bottom: 0px;
+}
+*/
+
+/* 为cover_e设置定位上下文 */
+section.cover_e {
+  position: relative !important;
+}
+
+section.cover_e footer {
+  position: absolute !important;
+  right: 3% !important;
+  bottom: 2% !important;
+  left: auto !important;
+  /* 重置模板中的left属性 */
+}
+
+section.cover_e footer>img {
+  /* 直接设置图片宽度 */
+  width: 300px;
+  /* 高度自适应保持宽高比 */
+  height: auto;
+  /* 限制最大高度避免过大 */
+  max-height: 100px;
+  background-color: rgba(255, 255, 255, 0);
+  background-blend-mode: lighten;
+  filter: brightness(2000%) grayscale(60%);
 }
