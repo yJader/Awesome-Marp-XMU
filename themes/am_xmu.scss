@@ -5,6 +5,7 @@
 :root {
   /* xmu主题色 */
   /* 校徽 */
+  /* 备注 这个颜色有点太暗了, 不太实用 */
   --color-xmu-blue: #2C3563;
   /* 厦门大学100周年校庆视觉识别系统手册-厦大蓝 */
   /* 
@@ -33,10 +34,15 @@
 
 
   /* 代码块背景色 */
-  --color-code-bg: #e8f4f6;
+  --color-code-bg: var(--color-xmu-blue-10);
 
   /* 封面页背景色：用于各种封面样式的背景渐变 */
   --color-coverbg: var(--color-xmu-blue-100);
+
+  /* 重点强调色：标题(h2-h5)、列表标记、引用边框、强调文字等 */
+  --color-much: var(--color-xmu-blue);
+  /* 过渡色：用于特殊过渡效果 */
+  --color-trans: var(--color-xmu-blue-80);
 
   /* 少量元素强调色：用于代码边框、滚动条等细节元素 */
   --color-few: #91a814;
@@ -47,11 +53,8 @@
   /* 主要文字颜色：正文段落、链接等基础文字 */
   --color-main: #041d22;
 
-  /* 重点强调色：标题(h2-h5)、列表标记、引用边框、强调文字等 */
-  --color-much: #1a4f91;
-
   /* 导航栏背景色 */
-  --color-navbar-bg: #d0e9ee;
+  --color-navbar-bg: var(--color-xmu-blue-20);
 
   /* 导航栏字体颜色：导航栏文字和边框 */
   --color-navbar-font: rgb(108, 95, 91);
@@ -61,9 +64,6 @@
 
   /* 一级标题颜色：h1标题的文字颜色 */
   --color-title: rgb(255, 255, 255);
-
-  /* 过渡色：用于特殊过渡效果 */
-  --color-trans: var(--color-xmu-blue-70);
 
   /* 图像滤镜效果 */
   --filter-b: brightness(30%) contrast(70%) grayscale(100%);
@@ -80,13 +80,13 @@ section::before {
   width: 200px;
   height: 60px;
 
-  background-image: url("themes/assets/xmu_slogan.svg");
+  background-image: url("themes/assets/xmu_logo_name.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top right;
 }
 
-/* 封面页和封底页不显示校徽 */
+/* 封面页和封底页的角落不显示校徽 */
 section.cover_a::before,
 section.cover_b::before,
 section.cover_c::before,
