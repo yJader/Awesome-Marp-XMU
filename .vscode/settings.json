@@ -1,5 +1,5 @@
 {
-  "markdown.marp.enableHtml": true,
+  "markdown.marp.html": "all",
   "markdown.marp.themes": [
     "./themes/am_blue.scss",
     "./themes/am_green.scss",
@@ -8,5 +8,9 @@
     "./themes/am_brown.scss",
     "./themes/am_purple.scss",
     "./themes/am_template.scss",
-  ]
+    "./themes/am_xmu.scss"
+  ],
+  "markdownlint.config": {
+    "MD036": false
+  },
 }
