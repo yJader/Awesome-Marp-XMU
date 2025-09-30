@@ -1,0 +1,68 @@
+/* @theme am_xmu */
+
+@import "am_template";
+
+:root {
+  /* 代码块背景色 */
+  --color-code-bg: #e8f4f6;
+
+  /* 封面页背景色：用于各种封面样式的背景渐变 */
+  --color-coverbg: #2c9cb1;
+
+  /* 少量元素强调色：用于代码边框、滚动条等细节元素 */
+  --color-few: #91a814;
+
+  /* 页脚文字颜色：包括页码、页脚信息等 */
+  --color-footer: #8c8c8c;
+
+  /* 主要文字颜色：正文段落、链接等基础文字 */
+  --color-main: #041d22;
+
+  /* 重点强调色：标题(h2-h5)、列表标记、引用边框、强调文字等 */
+  --color-much: #1a4f91;
+
+  /* 导航栏背景色 */
+  --color-navbar-bg: #d0e9ee;
+
+  /* 导航栏字体颜色：导航栏文字和边框 */
+  --color-navbar-font: rgb(108, 95, 91);
+
+  /* 引用块背景色：半透明的引用块背景 */
+  --color-quote: rgba(254, 176, 98, 0.1);
+
+  /* 一级标题颜色：h1标题的文字颜色 */
+  --color-title: #2c3563;
+
+  /* 过渡色：用于特殊过渡效果 */
+  --color-trans: #72bdcb;
+
+  /* 图像滤镜效果 */
+  --filter-b: brightness(30%) contrast(70%) grayscale(100%);
+  --filter-c: brightness(0%) contrast(60%) grayscale(80%);
+  --filter-e: brightness(0%) contrast(70%) grayscale(100%);
+}
+
+/* 在右上角添加校徽 */
+section::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  width: 200px;
+  height: 60px;
+
+  background-image: url("themes/assets/xmu_logo.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+/* 封面页和封底页不显示校徽 */
+section.cover_a::before,
+section.cover_b::before,
+section.cover_c::before,
+section.cover_d::before,
+section.cover_e::before,
+section.lastpage::before {
+  content: none;
+}
