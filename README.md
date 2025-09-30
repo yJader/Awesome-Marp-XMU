@@ -1,3 +1,15 @@
+> [!IMPORTANT]
+> 本项目基于 [Awesome Marp](https://github.com/favourhong/Awesome-Marp) v1.3, 进行了以下修改
+>
+> - 参考[PKU主题](https://github.com/goudanZ1/Awesome-Marp), 修改字号为固定px
+>
+> - 添加了一套 [XMU 主题的模版](files/AwesomeMarp_pku.pdf)（主要改动包括调整颜色、修改校徽等）; 
+>
+> - 编写了一个[说明文档](./Marp主题使用与编辑.md), 记录我的使用过程和DIY模板经验
+>
+> 在此感谢原作者开源QAQ, 光速完成日常汇报
+>
+> **以下是原仓库的 README 文件:**
 
 [✨ README-en](https://github.com/favourhong/Awesome-Marp/blob/main/README-en.md)、[🎉 README-zh](https://github.com/favourhong/Awesome-Marp/blob/main/README.md)
 
@@ -60,9 +72,9 @@ Marp 内置的原生主题样式数量少，并且呈现效果不好看，所以
 ![链接的呈现效果](./images/链接.gif)
 
 - 还可以自定义实现图片的水平排列方式：居中对齐、居左对齐或居右对齐
- 	- 图片水平居中对齐：`![#c](./images/a.png)`  
- 	- 图片水平居右对齐：`![#r](./images/a.png)`
- 	- 图片水平居左对齐：`![#l](./images/a.png)`
+  - 图片水平居中对齐：`![#c](./images/a.png)`  
+  - 图片水平居右对齐：`![#r](./images/a.png)`
+  - 图片水平居左对齐：`![#l](./images/a.png)`
 - ……
 
 总结一下，像上面的这样的自定义样式，目前 Awesome Marp 1.3 版本一共支持 38 个！使用时只需要在页面指定局部指令，比如： `<!-- _class: trans -->`）
