@@ -2,7 +2,7 @@
 marp: true
 theme: am_xmu
 size: 16:9
-header: "Marp 主题使用"
+header: "Marp主题使用与编辑"
 # title: "Marp 主题使用"
 footer: "\ *亦瑾* &nbsp; *2025年09月30日*"
 headingDivider: [2] # 自动根据标题级别添加分割线
@@ -11,9 +11,9 @@ headingDivider: [2] # 自动根据标题级别添加分割线
 <!-- markdownlint-disable MD029 MD001 MD033 -->
 <!-- _class: cover_e -->
 <!-- _header: "![](./themes/assets/xmu_logo.svg)" -->
-<!-- _footer: "![](./themes/assets/xmu_slogan.svg)" -->
+<!-- _footer: "![](./themes/assets/xmu_logo_name.svg)" -->
 
-# Marp主题使用
+# Marp主题使用与编辑
 
 ###### “用法简单、功能全面的个性化 PPT 模板”
 
@@ -72,7 +72,7 @@ headingDivider: [2] # 自动根据标题级别添加分割线
 ```markdown
 <!-- _class: cover_e -->
 <!-- _header: "![](./themes/assets/xmu_logo.svg)" -->
-<!-- _footer: "![](./themes/assets/xmu_slogan.svg)" -->
+<!-- _footer: "![](./themes/assets/xmu_logo_name.svg)" -->
 ```
 
 2. 模板文件[am_xmu.scss](./themes/am_xmu.scss)的`section::before{background-image: url("themes/assets/xmu_logo_name.svg");}`
