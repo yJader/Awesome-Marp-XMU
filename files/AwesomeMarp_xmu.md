@@ -5,7 +5,7 @@ theme: am_xmu
 paginate: true
 headingDivider: [2,3]
 math: true
-footer: \ *初虹（虹鹄山庄）* *Awesome Marp：轻松取代 LaTeX Beamer！* *2024年1月13日（v1.3）*
+footer: \ *亦瑾*
 ---
 
 <!-- markdownlint-disable-->
@@ -19,11 +19,10 @@ footer: \ *初虹（虹鹄山庄）* *Awesome Marp：轻松取代 LaTeX Beamer�
 
 ###### “用法简单、功能全面的个性化 PPT 模板”
 
-@初虹
-公众号：虹鹄山庄
+@初虹 (虹鹄山庄) <ch2099058972@163.com>
 发布时间：2024 年 1 月 13 日（v1.3）
-<ch2099058972@163.com>
-Awesome-Marp 地址：[GitHub 库](https://github.com/favourhong/Awesome-Marp)/[Gitee 库](https://gitee.com/favourhong/Awesome-Marp)
+二次开发: 亦瑾 (厦门大学 NICELab)
+Awesome-Marp 原地址：[GitHub 库](https://github.com/favourhong/Awesome-Marp)/[Gitee 库](https://gitee.com/favourhong/Awesome-Marp)
 
 ## Awesome Marp 有什么？
 
@@ -152,8 +151,12 @@ Awesome-Marp 地址：[GitHub 库](https://github.com/favourhong/Awesome-Marp)/[
 
 <!-- _class: cover_c -->
 <!-- _paginate: "" -->
-<!-- _footer: 厚德博学 经济匡时 -->
+<!-- _footer: 自强不息，止于至善 -->
 <!-- _header: ![](https://mytuchuang-1303248785.cos.ap-beijing.myqcloud.com/picgo/202405291116463.png) -->
+<!-- _header: ![](../themes/assets/xmu_logo_name.svg) -->
+
+
+
 
 # <!-- fit -->Awesome Marp：轻松取代 LaTeX Beamer
 
@@ -169,7 +172,7 @@ Awesome-Marp 地址：[GitHub 库](https://github.com/favourhong/Awesome-Marp)/[
 
 <!-- _class: cover_d -->
 <!-- _paginate: "" -->
-<!-- _footer: "厚德博学 经济匡时" -->
+<!-- _footer: "自强不息，止于至善" -->
 
 # <!-- fit -->Awesome Marp：轻松取代 LaTeX Beamer
 
@@ -185,8 +188,8 @@ Awesome-Marp 地址：[GitHub 库](https://github.com/favourhong/Awesome-Marp)/[
 
 <!-- _class: cover_e -->
 <!-- _paginate: "" -->
-<!-- _footer: ![](https://mytuchuang-1303248785.cos.ap-beijing.myqcloud.com/picgo/202405291116463.png) -->
-<!-- _header: ![](https://mytuchuang-1303248785.cos.ap-beijing.myqcloud.com/picgo/202405291053273.png) -->
+<!-- _footer: ![](../themes/assets/xmu_logo_name.svg) -->
+<!-- _header: ![](../themes/assets/xmu_logo.svg) -->
 
 # <!-- fit -->Awesome Marp：轻松取代 LaTeX Beamer
 
@@ -234,6 +237,7 @@ Awesome-Marp 地址：[GitHub 库](https://github.com/favourhong/Awesome-Marp)/[
 ---
 
 <!-- _header: 目录<br>CONTENTS<br>![](https://mytuchuang-1303248785.cos.ap-beijing.myqcloud.com/picgo/202405291053273.png)-->
+<!-- _header: 目录<br>CONTENTS<br>![](../themes/assets/xmu_logo.svg)-->
 <!-- _class: toc_b -->
 <!-- _footer: "" -->
 <!-- _paginate: "" -->

@@ -131,3 +131,17 @@ section.cover_e footer>img {
   background-blend-mode: lighten;
   filter: brightness(2000%) grayscale(60%);
 }
+
+section.cover_c header {
+  width: auto;
+  max-width: 50%;
+}
+
+section.cover_c img {
+  height: 90px;
+  width: auto;
+  /* 覆盖模板中的滤镜效果，让校徽显示原色 */
+  filter: none !important;
+  background-color: transparent !important;
+  background-blend-mode: normal !important;
+}
