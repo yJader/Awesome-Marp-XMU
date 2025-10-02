@@ -141,11 +141,10 @@ Awesome-Marp 原地址：[GitHub 库](https://github.com/favourhong/Awesome-Marp
 
 ###### “用法简单、功能全面的个性化 PPT 模板”
 
-@初虹
-公众号：虹鹄山庄
+@初虹 (虹鹄山庄) <ch2099058972@163.com>
 发布时间：2024 年 1 月 13 日（v1.3）
-<ch2099058972@163.com>
-Awesome-Marp 地址：[GitHub 库](https://github.com/favourhong/Awesome-Marp)/[Gitee 库](https://gitee.com/favourhong/Awesome-Marp)
+二次开发: 亦瑾 (厦门大学 NICELab)
+Awesome-Marp 原地址：[GitHub 库](https://github.com/favourhong/Awesome-Marp)/[Gitee 库](https://gitee.com/favourhong/Awesome-Marp)
 
 ---
 
@@ -162,11 +161,10 @@ Awesome-Marp 地址：[GitHub 库](https://github.com/favourhong/Awesome-Marp)/[
 
 ###### “用法简单、功能全面的个性化 PPT 模板”
 
-@初虹
-公众号：虹鹄山庄
+@初虹 (虹鹄山庄) <ch2099058972@163.com>
 发布时间：2024 年 1 月 13 日（v1.3）
-<ch2099058972@163.com>
-Awesome-Marp 地址：[GitHub 库](https://github.com/favourhong/Awesome-Marp)/[Gitee 库](https://gitee.com/favourhong/Awesome-Marp)
+二次开发: 亦瑾 (厦门大学 NICELab)
+Awesome-Marp 原地址：[GitHub 库](https://github.com/favourhong/Awesome-Marp)/[Gitee 库](https://gitee.com/favourhong/Awesome-Marp)
 
 ---
 
@@ -178,11 +176,10 @@ Awesome-Marp 地址：[GitHub 库](https://github.com/favourhong/Awesome-Marp)/[
 
 ###### “用法简单、功能全面的个性化 PPT 模板”
 
-@初虹
-公众号：虹鹄山庄
+@初虹 (虹鹄山庄) <ch2099058972@163.com>
 发布时间：2024 年 1 月 13 日（v1.3）
-<ch2099058972@163.com>
-Awesome-Marp 地址：[GitHub 库](https://github.com/favourhong/Awesome-Marp)/[Gitee 库](https://gitee.com/favourhong/Awesome-Marp)
+二次开发: 亦瑾 (厦门大学 NICELab)
+Awesome-Marp 原地址：[GitHub 库](https://github.com/favourhong/Awesome-Marp)/[Gitee 库](https://gitee.com/favourhong/Awesome-Marp)
 
 ---
 
@@ -195,11 +192,10 @@ Awesome-Marp 地址：[GitHub 库](https://github.com/favourhong/Awesome-Marp)/[
 
 ###### “用法简单、功能全面的个性化 PPT 模板”
 
-@初虹
-公众号：虹鹄山庄
+@初虹 (虹鹄山庄) <ch2099058972@163.com>
 发布时间：2024 年 1 月 13 日（v1.3）
-<ch2099058972@163.com>
-Awesome-Marp 地址：[GitHub 库](https://github.com/favourhong/Awesome-Marp)/[Gitee 库](https://gitee.com/favourhong/Awesome-Marp)
+二次开发: 亦瑾 (厦门大学 NICELab)
+Awesome-Marp 原地址：[GitHub 库](https://github.com/favourhong/Awesome-Marp)/[Gitee 库](https://gitee.com/favourhong/Awesome-Marp)
 
 ## 3. 目录页
 

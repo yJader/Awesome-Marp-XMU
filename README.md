@@ -1,10 +1,12 @@
 > [!IMPORTANT]
 > 本项目基于 [Awesome Marp](https://github.com/favourhong/Awesome-Marp) v1.3, 进行了以下修改
 >
-> - 参考[PKU主题](https://github.com/goudanZ1/Awesome-Marp), 修改字号为固定px
+> - 参考[PKU主题](https://github.com/goudanZ1/Awesome-Marp), 修改字号为固定px;
 >
-> - 添加了一套 [XMU 主题的模版](files/AwesomeMarp_pku.pdf)（主要改动包括调整颜色、修改校徽等）; 
->
+> - 添加了一套 [XMU 主题的模版 am_xmu](files/AwesomeMarp_xmu.pdf)
+>   - 没有安装额外字体, 感觉黑体更严肃一些, 也不错XD
+>   - 调整主题颜色, 添加校徽资源
+>   - 针对am_template中封面页(cover_c, cover_e)中, 不适配不同大小校徽的bug(暂未在am_template中直接修改)
 > - 编写了一个[说明文档](./Marp主题使用与编辑.md), 记录我的使用过程和DIY模板经验
 >
 > 在此感谢原作者开源QAQ, 光速完成日常汇报
