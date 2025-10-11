@@ -82,12 +82,12 @@ headingDivider: [2] # 自动根据标题级别添加分割线
 
 ##### <mark>注意</mark>: 主题资源文件路径问题
 
-- 对于主题需要用到的资源文件(如学校logo图片), 需要使用相对于工作区目录的路径or网络图片路径(如你的oss地址), 不能使用`./`相对于scss文件的路径
-- 例如, 在`themes/am_xmu.scss`中
-  - 需要使用`background-image: url("themes/assets/xmu_logo.svg");`,
-  而不是`background-image: url("./themes/am_xmu.scss");`
-  - 这样会被解析为`.../Awesome-Marp-XMU/assets/xmu_logo.svg`,
-  而非我们希望的`.../Awesome-Marp-XMU/themes/assets/xmu_logo.svg`
+- 对于主题需要用到的资源文件(如学校logo图片), 需要使用相对于markdown文件的路径(十分难用)or网络图片路径(如你的oss地址), 不能使用`./`**相对于scss文件**的路径
+- 例如, 在文件`Marp主题使用与编辑.md`中引用了`themes/am_xmu.scss`主题
+  - 在`am_xmu.scss`不能使用`background-image: url("./assets/xmu_logo.svg");`,
+  这样会被错误解析为`.../Awesome-Marp-XMU/assets/xmu_logo.svg`,
+  - 应该使用`background-image: url("themes/assets/xmu_logo.svg");`
+  这样会被正确解析为`.../Awesome-Marp-XMU/themes/assets/xmu_logo.svg`
 
 以下是检查vscode控制台的报错信息:
 
