@@ -35,7 +35,7 @@ headingDivider: [2] # 自动根据标题级别添加分割线
     ```
 
 4. 开始编写(可以提示AI使用Marp语法编写PPT, 高效快速)
-    - 更详细的样式说明 请参考<mark>官方文档[Awesome Marp主题说明](./files/AwesomeMarp_xmu.md)</mark>
+    - 更详细的样式说明 请参考<mark>官方文档[Awesome Marp主题说明](./examples/AwesomeMarp_xmu.md)</mark>
 
 ## DIY theme
 
