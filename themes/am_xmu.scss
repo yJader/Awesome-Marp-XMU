@@ -86,12 +86,13 @@ section::before {
   background-position: top right;
 }
 
-/* 封面页和封底页的角落不显示校徽 */
+/* 封面页, 转折页, 封底页的角落不显示校徽 */
 section.cover_a::before,
 section.cover_b::before,
 section.cover_c::before,
 section.cover_d::before,
 section.cover_e::before,
+section.trans::before,
 section.lastpage::before {
   content: none;
 }

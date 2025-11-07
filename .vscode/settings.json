@@ -1,4 +1,5 @@
 {
+  //"markdown.marp.enableHtml": true, // 旧版本启用html
   "markdown.marp.html": "all",
   "markdown.marp.themes": [
     "./themes/am_blue.scss",
