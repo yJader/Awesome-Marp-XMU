@@ -6,11 +6,15 @@
 > - 添加了一套 [XMU 主题的模版 am_xmu](files/AwesomeMarp_xmu.pdf)
 >   - 没有安装额外字体, 感觉黑体更严肃一些, 也不错XD
 >   - 调整主题颜色, 添加校徽资源
->   - 针对am_template中封面页(cover_c, cover_e)中, 不适配不同大小校徽的bug(暂未在am_template中直接修改)
-> - 编写了一个[说明文档](./Marp主题使用与编辑.md), 记录我的使用过程和DIY模板经验
+>   - 在am_xmu主题中修复了am_template中封面页(cover_c, cover_e)中, 不适配不同大小校徽的bug(暂未在am_template中直接修改)
+> - 编写了一个 **[说明文档](./Marp主题使用与编辑.md)**, 记录我的使用过程和DIY模板经验
+> - 为加速下载，同时提供 **GitHub** 与 **Gitee** 两个镜像仓库： [Awesome-Marp-XMU (GitHub)](https://github.com/yJader/Awesome-Marp-XMU)￼ / [Awesome-Marp-XMU (Gitee)￼](https://gitee.com/yJader/Awesome-Marp-XMU)
 >
 > 在此感谢原作者开源QAQ, 光速完成日常汇报
 >
+
+---
+
 > **以下是原仓库的 README 文件:**
 
 [✨ README-en](https://github.com/favourhong/Awesome-Marp/blob/main/README-en.md)、[🎉 README-zh](https://github.com/favourhong/Awesome-Marp/blob/main/README.md)
