@@ -80,7 +80,14 @@ section::before {
   width: 200px;
   height: 60px;
 
+  /* note: 因为路径问题, 此处svg经常不生效。
+    - 已支持Data URI嵌入；
+        若想自动替换, 取消`background-image: url("data:image/svg+xml;base64,__XMU_BASE64__");`注释后, 
+        运行仓库根目录下的 `scripts/embed_svg_base64.sh` 脚本。
+    - 更推荐托管图片到CDN/图床然后直接使用URL引用。
+    */
   background-image: url("themes/assets/xmu_logo_name.svg");
+  /* background-image: url("data:image/svg+xml;base64,__XMU_BASE64__"); */
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top right;
