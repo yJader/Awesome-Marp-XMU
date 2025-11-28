@@ -20,6 +20,9 @@
   --font-size-footer: 22px;
   --font-size-page: 12px;
   --font-size-code: 22px;
+
+  /* 多列布局间距 */
+  --gap-cols: 0.5rem;
 }
 
 
@@ -988,7 +991,7 @@ section.cols2_ul_ci ul li:before {
 section.cols-2 {
   overflow: visible;
   display: grid;
-  gap: 1.5rem;
+  gap: var(--gap-cols);
   grid-template-columns: 50% 50%;
 }
 
@@ -1026,7 +1029,7 @@ section.cols-2 .rimg {
 section.cols-3 {
   overflow: visible;
   display: grid;
-  gap: 1rem;
+  gap: var(--gap-cols);
   grid-template-columns: 1fr 1fr 1fr;
 }
 
@@ -1075,7 +1078,7 @@ section.cols-3 .rimg {
 section.cols-2-73 {
   overflow: visible;
   display: grid;
-  gap: 1rem;
+  gap: var(--gap-cols);
   grid-template-columns: 70% 30%;
 }
 
@@ -1113,7 +1116,7 @@ section.cols-2-73 .rimg {
 section.cols-2-64 {
   overflow: visible;
   display: grid;
-  gap: 1rem;
+  gap: var(--gap-cols);
   grid-template-columns: 60% 40%;
 }
 
@@ -1151,7 +1154,7 @@ section.cols-2-64 .rimg {
 section.cols-2-37 {
   overflow: visible;
   display: grid;
-  gap: 1rem;
+  gap: var(--gap-cols);
   grid-template-columns: 30% 70%;
 }
 
@@ -1189,7 +1192,7 @@ section.cols-2-37 .rimg {
 section.cols-2-46 {
   overflow: visible;
   display: grid;
-  gap: 1rem;
+  gap: var(--gap-cols);
   grid-template-columns: 40% 60%;
 }
 
