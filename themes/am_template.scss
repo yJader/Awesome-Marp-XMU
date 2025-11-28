@@ -1397,6 +1397,20 @@ section.bq-black blockquote>p:not(:nth-child(1)) {
   background-color: rgb(228, 234, 246);
 }
 
+section.bq-blue blockquote>ul,
+section.bq-red blockquote>ul,
+section.bq-green blockquote>ul,
+section.bq-purple blockquote>ul,
+section.bq-black blockquote>ul,
+section.bq-blue blockquote>ol,
+section.bq-red blockquote>ol,
+section.bq-green blockquote>ol,
+section.bq-purple blockquote>ol,
+section.bq-black blockquote>ol {
+  padding: 1% 2% 1% 2.5em;
+  background-color: rgb(228, 234, 246);
+}
+
 
 section.bq-blue blockquote>p:nth-child(1) {
   background-color: rgb(129, 161, 193);
