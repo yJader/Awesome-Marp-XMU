@@ -1,4 +1,4 @@
-[✨ README-en](https://github.com/favourhong/Awesome-Marp/blob/main/README-en.md)、[🎉 README-zh](https://github.com/favourhong/Awesome-Marp/blob/main/README.md)
+[✨ README-en](./README-origin-en.md)、[🎉 README-zh](./README-origin.md)
 
 ## Awesome Marp: Easily replace LaTeX Beamer
 
@@ -59,9 +59,9 @@ There are only three: the Markdown syntax, the Markdown editor ([Visual Studio C
 ![链接的呈现效果](./images/链接.gif)
 
 - It is also possible to customize the horizontal alignment of images: center, left or right.
- 	- Horizontal center alignment of images: `! [#c](. /images/a.png)`  
- 	- Pictures are horizontally right-aligned: `! [#r](. /images/a.png)`
- 	- Pictures are horizontally left-aligned: `! [#l](. /images/a.png)`
+  - Horizontal center alignment of images: `! [#c](. /images/a.png)`  
+  - Pictures are horizontally right-aligned: `! [#r](. /images/a.png)`
+  - Pictures are horizontally left-aligned: `! [#l](. /images/a.png)`
 - ……
 
 To summarize, there are currently 38 custom styles like the one above supported in `Awesome Marp` 1.3! To use them, you just need to specify a local directive on the page, e.g. `<! -- _class: trans -->`)
@@ -77,15 +77,15 @@ Not only that, but I've also designed 6 theme colors, and to switch between them
 ## How to use `Awesome Marp`?
 
 - How to use:
- 	- **With VS Code**: Open the `Awesome-Marp` folder directly with VS Code.
-  		- If you want to "use it as it is", you can just follow the Markdown source files I've shared and modify them accordingly.
+  - **With VS Code**: Open the `Awesome-Marp` folder directly with VS Code.
+      - If you want to "use it as it is", you can just follow the Markdown source files I've shared and modify them accordingly.
 
-  		- If you're not happy with some of the effects and want to fine-tune them, there are currently 6 CSS files under `Awesome-Marp/themes` that determine the final rendering of the Markdown source code, so you can try to change them!
-  		- If you are able to customize your CSS files, don't forget to add the path to your CSS files in `Awesome-Marp/.vscode/settings.json` before rendering.
- 	- **With Obsidian**: Install the [Marp Slides plugin](https://github.com/samuele-cozzi/obsidian-marp-slides) and configure the CSS path accordingly!
- 
+      - If you're not happy with some of the effects and want to fine-tune them, there are currently 6 CSS files under `Awesome-Marp/themes` that determine the final rendering of the Markdown source code, so you can try to change them!
+      - If you are able to customize your CSS files, don't forget to add the path to your CSS files in `Awesome-Marp/.vscode/settings.json` before rendering.
+  - **With Obsidian**: Install the [Marp Slides plugin](https://github.com/samuele-cozzi/obsidian-marp-slides) and configure the CSS path accordingly!
+
 - Due to the concern of copyright infringement, you need to download the fonts and install them by yourself, the fonts used in Awesome Marp are:
- 	- Text fonts: `Latin Modern Math',`方正宋刻本秀楷简体', if not installed, `Calibri' and`楷体' will be used by default.
+  - Text fonts: `Latin Modern Math',`方正宋刻本秀楷简体', if not installed, `Calibri' and`楷体' will be used by default.
   - Headline fonts: `Optima LT Medium',`方正苏新诗柳楷简体', if not installed, `Arial' and`黑体' will be used by default.
   - Footnote fonts: `Charm` and `叶根友毛笔行书修正版`, if not installed, `Calibri` and `楷体` will be used by default.
   - Code fonts: `Fira Code` and `霞鹜文楷等宽`, if not installed, `Consolas` and `华文中宋` will be used by default.

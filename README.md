@@ -1,136 +1,35 @@
 > [!IMPORTANT]
 > 本项目基于 [Awesome Marp](https://github.com/favourhong/Awesome-Marp) v1.3, 进行了以下修改
 >
-> - 参考[PKU主题](https://github.com/goudanZ1/Awesome-Marp), 修改字号为固定px;
->
-> - 添加了一套 [XMU 主题的模版 am_xmu](files/AwesomeMarp_xmu.pdf)
->   - 没有安装额外字体, 感觉黑体更严肃一些, 也不错XD
->   - 调整主题颜色, 添加校徽资源
->   - 在am_xmu主题中修复了am_template中封面页(cover_c, cover_e)中, 不适配不同大小校徽的bug(暂未在am_template中直接修改)
-> - 编写了一个 **[说明文档](./Marp主题使用与编辑.md)**, 记录我的使用过程和DIY模板经验
-> - 为加速下载，同时提供 **GitHub** 与 **Gitee** 两个镜像仓库： [Awesome-Marp-XMU (GitHub)](https://github.com/yJader/Awesome-Marp-XMU)￼ / [Awesome-Marp-XMU (Gitee)￼](https://gitee.com/yJader/Awesome-Marp-XMU)
->
-> 在此感谢原作者开源QAQ, 光速完成日常汇报
->
+
+## template改动
+
+1. 参考[PKU主题](https://github.com/goudanZ1/Awesome-Marp), 修改字号为固定px;
+2. 修复`bq-xxx`类引用块在使用列表时, 背景色无法正确显示的bug;
+3. 增强`cols`类的适配性, 在`.ldiv`和`.rdiv`前后添加内容时, 会自动占据空间, 避免重叠和布局错乱;
+
+## XMU主题开发
+
+添加了一套 [XMU 主题的模版 am_xmu](files/AwesomeMarp_xmu.pdf)
+
+- 没有安装额外字体, 感觉黑体更严肃一些, 也不错XD
+- 调整主题颜色, 添加校徽资源
+- 在am_xmu主题中修复了am_template中封面页(cover_c, cover_e)中, 不适配不同大小校徽的bug(暂未在am_template中直接修改)
+
+## 说明文档
+
+编写了一个 **[说明文档](./Marp主题使用与编辑.md)**, 记录我的使用过程和DIY模板经验
+
+此外也可以参考我的博客: [Plain Text is All You Need (for Presentations)](https://yjader.github.io/JinBlog/blog/presentation.html#plain-text-is-all-you-need-for-presentations), 里面有其他使用Marp的演讲经验分享
+
+## 下载方式
+
+为加速下载，同时提供 **GitHub** 与 **Gitee** 两个镜像仓库： [Awesome-Marp-XMU (GitHub)](https://github.com/yJader/Awesome-Marp-XMU)￼ / [Awesome-Marp-XMU (Gitee)￼](https://gitee.com/yJader/Awesome-Marp-XMU)
+
+<mark>在此感谢原作者开源QAQ, 光速完成日常汇报</mark>
 
 ---
 
 > **以下是原仓库的 README 文件:**
 
-[✨ README-en](https://github.com/favourhong/Awesome-Marp/blob/main/README-en.md)、[🎉 README-zh](https://github.com/favourhong/Awesome-Marp/blob/main/README.md)
-
-# Awesome Marp：轻松取代 LaTeX Beamer
-
-## 为什么要做 Awesome Marp？
-
-自从了解到 Marp 可以使用 Markdown 语法来创作 PPT 之后，我有两年多没有使用 PowerPoint 做过演示文稿了。
-
-Marp 内置的原生主题样式数量少，并且呈现效果不好看，所以一直以来我也在尝试自定义 CSS 文件，来打造符合个人审美的 theme。我在边改造边用的过程中，这套模板也得到了几位朋友的喜爱。于是索性分享出来，希望能给到你一些帮助~
-
-我给这套主题还起了个名字，`Awesome Marp`，算是一个阶段性总结吧。目前 v1.3版本提供了 6 种主题（分别是深色、绿色、蓝色、红色、紫色和棕色）和 38 种自定义样式。
-
-首先，先来看一张效果动图吧~
-
-![Awesome Marp 整体效果](./images/AwesomeMarp整体效果.gif)
-
-怎么样？如果你也使用过 Marp 原生的 theme，一定会发现 Awesome-Marp 变化真的很大了。是的，我基于 Marp 的`default` 主题，做了不小的改动。
-
-这是一个纯 CSS 的项目，所有的效果都是 CSS 语言实现的。因为并没有前端基础，所以我是一边学一边改，代码还有不少可以再完善优化的地方。但，完成比完善更重要嘛，一些小的问题可以日后迭代更新。于是，就决定将 Awesome Marp 上线了！
-
-## 你需要了解的软件工具
-
-就三样：用到的工具：软件 [Visual Studio Code](https://code.visualstudio.com) 或 [Obsidian](https://obsidian.md/)、[Marp for VScode（插件）](https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode)！
-
-- Markdown 是一种**极轻量**的文本标记语言，允许人们使用***\*易读易写\****的纯文本格式编写文档，而且对于表格、代码、图片、公式等支持良好，在网站搭建、课程笔记/讲义、演示文稿、撰写学术论文等方面应用极为广泛。
-
-- Markdown 编辑器（如 VS Code、Obsidian）
-
-- Marp 是使用 Markdown 创作演示文稿的工具。
-
-## Awesome Marp 的几个特色
-
-- 支持 8 种**页面分栏**的样式：分别是两栏五五分、两栏六四分、两栏七三分、两栏四六分、两栏三七分、三栏三三分、两行分栏和品字型分栏
-
-![4种页面分栏的呈现效果](./images/页面分栏.gif)
-
-- 支持 6 种**非嵌套列表的分栏**样式：两列+有序列表+方形序号、两列+有序列表+圆形序号、两列+无序列表+方形序号、两列+无序列表+圆形序号、单列+有序列表+方形序号、单列+有序列表+圆形序号
-
-![list列表分栏呈现的效果](./images/列表分栏.gif)
-
-- 支持导航进度栏：
-
-![导航进度栏的效果](./images/导航进度栏.gif)
-
-- 支持 5 种类型的封面页：
-
-![5种类型封面页的效果](./images/封面页.gif)
-
-- 支持 3 种类型的目录页：
-
-![3种目录页的效果](./images/目录页.gif)
-
-- 支持 5 种自定义 Callouts（类似于 Beamer 的定理框）：
-
-![5种自定义引用盒子的呈现效果](./images/引用盒子.gif)
-
-- 小彩蛋：链接会自动增加一个小尾巴：
-
-![链接的呈现效果](./images/链接.gif)
-
-- 还可以自定义实现图片的水平排列方式：居中对齐、居左对齐或居右对齐
-  - 图片水平居中对齐：`![#c](./images/a.png)`  
-  - 图片水平居右对齐：`![#r](./images/a.png)`
-  - 图片水平居左对齐：`![#l](./images/a.png)`
-- ……
-
-总结一下，像上面的这样的自定义样式，目前 Awesome Marp 1.3 版本一共支持 38 个！使用时只需要在页面指定局部指令，比如： `<!-- _class: trans -->`）
-
-![38 种自定义样式](./images/38种自定义样式.png)  
-
-不光如此，我还设计了 6 种主题色，想要切换 theme，只需要可在 YAML 区定义 `theme: <theme_name>`：
-
-![6种主题颜色](./images/6种主题颜色.png)
-
-![轻松切换主题](./images/切换主题.gif)
-
-## 如何使用 Awesome Marp？
-
-- 如何使用：
-  - **搭配 VS Code**：直接使用 VS Code 打开 `Awesome-Marp` 文件夹
-    - 如果你想「拿来即用」，直接根据我分享的 Markdown 源码文件，对照修改就好了~
-    - 如果你对部分效果不满意、期望简单微调的话，目前在 `Awesome-Marp/themes` 下有 6 个 CSS 文件，这些 CSS 文件决定了 Markdown 源码的最终渲染效果，可以试着改一改~
-    - 如果你能够自行定制个性化 CSS 文件，渲染前，别忘在 `Awesome-Marp/.vscode/settings.json` 里加上你的 CSS 文件路径~
-  - **搭配 Obsidian**：安装 [Marp Slides 插件](https://github.com/samuele-cozzi/obsidian-marp-slides)，并配置相应 CSS 路径
-
-- 字体：因担心版权问题，需自行下载字体并安装，Awesome Marp 用到的字体有：
-  - 正文字体：`Latin Modern Math`、`方正宋刻本秀楷简体`，如果未安装，默认将使用 `Calibri` 和 `楷体`
-  - 标题字体：`Optima LT Medium`、`方正苏新诗柳楷简体`，如果未安装，默认将使用 `Arial` 和 `黑体`
-  - 脚注字体：`Charm` 和 `叶根友毛笔行书修正版`，如果未安装，默认将使用 `Calibri` 和 `楷体`
-  - 代码字体：`Fira Code` 和 `霞鹜文楷等宽`，如果未安装，默认将使用 `Consolas` 和 `华文中宋`
-
-## 更新记录
-
-- `2024年1月13日` Awesome Marp v1.3
-  - 38 种自定义样式
-  - 增加两行分栏、品字型分栏等
-  - [Awesome Marp v1.3：几处小更新～](https://mp.weixin.qq.com/s?__biz=MzkwOTE3NDExOQ==&mid=2247486869&idx=1&sn=fcc377ff6a5930436e5078a09d53f0ab&chksm=c13ff99df648708b89bafba030b27909d0022279e26da723ca54a1666fe55f50a4230f050662&scene=178&cur_album_id=3132459596339757070#rd)
-- `2023年10月16日` Awesome Marp v1.2
-  - 30 种自定义样式
-  - 在 v1.1 基础上增加脚注（1个）、调节字体大小（4 个）共 5 个自定义样式
-  - 新增免安装字体
-  - [Awesome Marp v1.2：增加脚注、调节字体大小等样式～](https://mp.weixin.qq.com/s?__biz=MzkwOTE3NDExOQ==&mid=2247486825&idx=1&sn=56d632ce164831438ec87c1b20ed4c4c&chksm=c13ff961f64870774f069ab816340783d8f54fd6b89363b8d9412c593efc640851ce9edd8833&scene=178&cur_album_id=3132459596339757070#rd)
-- `2023年9月26日`  Awesome Marp v1.1
-  - 25 种自定义样式
-  - 在 v1.0 基础上增加固定标题行（2 个）、页面四六分栏、页面三七分栏（2 个）共 4 个自定义样式
-  - [Awesome Marp v1.1：标题行不随正文浮动，这下更像 Beamer 了！](https://mp.weixin.qq.com/s?__biz=MzkwOTE3NDExOQ==&mid=2247486800&idx=1&sn=527348e242576079e4bd6cd1823c823a&chksm=c13ff958f648704e40a202db6ad5fa215ef4c189d66403e161d6ace9828406a8747ac755684f&scene=178&cur_album_id=3132459596339757070#rd)
-- `2023年9月24日`  Awesome Marp v1.0
-  - 21 种自定义样式
-  - [Awesome Marp v1.0：我开发了一整套 Marp 主题，Markdown 转换的 PPT 也可以很好看！](https://mp.weixin.qq.com/s?__biz=MzkwOTE3NDExOQ==&mid=2247486787&idx=1&sn=2652ddae81f50240844cb652780912e1&chksm=c13ff94bf648705da1ba986b91265e3ff018acaffcfa60d7807a81be22176005e7a2b4483627&scene=178&cur_album_id=3132459596339757070#rd)
-
----
-
-希望对你有帮助，欢迎交流 ~
-
-创作不易，buy me a coffee 🤙~
-
-<img alt="WeChatPay" src="https://mytuchuang-1303248785.cos.ap-beijing.myqcloud.com/picgo/202309240907419.png" width="200"/>
+[✨ README-en](./README-origin-en.md)、[🎉 README-zh](./README-origin.md)
