@@ -99,6 +99,53 @@ log.ts:460   ERR Webview.loadLocalResource - Error using fileReader.
 index.html:1  GET https://file+.vscode-resource.vscode-cdn.net/Users/jader/Work/workspace/vscode/Awesome-Marp-XMU/assets/xmu_logo.svg 404 (Not Found)
 ```
 
+## HTML小技巧
+
+---
+
+### 自定义cols-2图片位置 (False)
+
+<!-- _class: cols-2 -->
+在下面的两列布局例子下, 图片过高
+如果直接使用`cols-2`类, 让二者对齐, 会要导致图表下移, 显示不全
+可以通过修改html`style="margin-top: -10rem;"`来适当上移图片
+
+<div class="ldiv">
+
+- 这是八奈见杏菜
+- 她很可爱
+- 请喂她零食
+
+</div>
+
+<div class="rimg" style="flex-direction: column; ">
+
+<img src="./Marp主题使用与编辑.assets/YanamiAnna.png" alt="YanamiAnna" height="550" />
+
+</div>
+
+---
+
+### 自定义cols-2图片位置 (True)
+
+<!-- _class: cols-2 -->
+在下面的两列布局例子下, 图片过高
+如果直接使用`cols-2`类, 让二者对齐, 会要导致图表下移, 显示不全
+可以通过修改html`style="margin-top: -10rem;"`来适当上移图片
+
+<div class="ldiv">
+
+- 这是八奈见杏菜
+- 她很可爱
+- 请喂她零食
+
+</div>
+
+<div class="rimg" style="flex-direction: column; margin-top: -10rem;">
+
+<img src="./Marp主题使用与编辑.assets/YanamiAnna.png" alt="YanamiAnna" height="550" />
+
+</div>
 ---
 <!-- _class: lastpage -->
 
