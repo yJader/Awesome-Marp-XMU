@@ -1,6 +1,6 @@
 {
   //"markdown.marp.enableHtml": true, // 旧版本启用html
-  "markdown.marp.html": "all",
+  "markdown.marp.html": "all", // 新版本启用html
   "markdown.marp.themes": [
     "./themes/am_blue.scss",
     "./themes/am_green.scss",

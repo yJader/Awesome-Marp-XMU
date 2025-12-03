@@ -20,23 +20,6 @@ headingDivider: [2] # 自动根据标题级别添加分割线
 在配置和修改Awesome Marp主题时, 碰到了一些坑点, 记录一下
 其实这个markdown也是用Marp写的, 可以预览试试XD
 
-## Marp for VS Code 使用
-
-1. 安装`Marp for VS Code`插件
-2. 配置`.vscode/settings.json`文件, 指定主题文件路径(可以参考该仓库下的[setting.json](./.vscode/settings.json))
-3. 在Markdown文件的YAML头部指定主题, 例如
-
-    ```markdown
-    ---
-    marp: true
-    # 选择am_xmu主题
-    theme: am_xmu
-    ---
-    ```
-
-4. 开始编写(可以提示AI使用Marp语法编写PPT, 高效快速)
-    - 更详细的样式说明 请参考<mark>官方文档[Awesome Marp主题说明](./examples/AwesomeMarp_xmu.md)</mark>
-
 ## DIY theme
 
 ### 如何DIY你学校的模板

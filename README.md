@@ -16,9 +16,39 @@
 - 调整主题颜色, 添加校徽资源
 - 在am_xmu主题中修复了am_template中封面页(cover_c, cover_e)中, 不适配不同大小校徽的bug(暂未在am_template中直接修改)
 
-## 说明文档
+## 安装与使用
 
-编写了一个 **[说明文档](./Marp主题使用与编辑.md)**, 记录我的使用过程和DIY模板经验
+### Marp for VS Code 使用
+
+1. 安装`Marp for VS Code`插件
+2. 配置`.vscode/settings.json`文件, 指定主题文件路径(可以参考该仓库下的[setting.json](./.vscode/settings.json))
+3. 在Markdown文件的YAML头部指定主题, 例如
+
+    ```markdown
+    ---
+    marp: true
+    # 选择am_xmu主题
+    theme: am_xmu
+    ---
+    ```
+
+4. 开始编写(可以提示AI使用Marp语法编写PPT, 高效快速)
+    - 更详细的样式说明 请参考<mark>官方文档[Awesome Marp主题说明](./examples/AwesomeMarp_xmu.md)</mark>
+
+### 常见bug
+
+#### 渲染html
+
+本模板中大量使用了html标签(如`<div>`), 以实现更复杂的布局和样式, 因此需要开启Marp的html渲染功能
+
+因此参考[settings.json](./.vscode/settings.json) 和 [官方README](https://github.com/marp-team/marp-vscode?tab=readme-ov-file#html-elements-in-markdown-%EF%B8%8F) 说明, 需要
+
+- 新版插件(since v2): 在VS Code的设置中开启`markdown.marp.html`选项, 设置为`all`
+- 旧版插件: 在VS Code的设置中开启`markdown.marp.enableHtml`选项, 设置为`true`
+
+### 额外说明
+
+我编写了一个 **[说明文档](./Marp主题使用与编辑.md)**, 记录一些更复杂的使用过程和DIY模板经验
 
 此外也可以参考我的博客: [Plain Text is All You Need (for Presentations)](https://yjader.github.io/JinBlog/blog/presentation.html#plain-text-is-all-you-need-for-presentations), 里面有其他使用Marp的演讲经验分享
 
