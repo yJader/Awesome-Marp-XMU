@@ -12,6 +12,8 @@
 
 添加了一套 [XMU 主题的模版 am_xmu](files/AwesomeMarp_xmu.pdf)
 
+![AwesomeMarp_xmu](./README.assets/AwesomeMarp_xmu.gif)
+
 - 没有安装额外字体, 感觉黑体更严肃一些, 也不错XD
 - 调整主题颜色, 添加校徽资源
 - 在am_xmu主题中修复了am_template中封面页(cover_c, cover_e)中, 不适配不同大小校徽的bug(暂未在am_template中直接修改)

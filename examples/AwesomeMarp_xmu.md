@@ -21,7 +21,7 @@ footer: \ *亦瑾*
 
 @初虹 (虹鹄山庄) <ch2099058972@163.com>
 发布时间：2024 年 1 月 13 日（v1.3）
-二次开发: 亦瑾 (厦门大学 NICELab)
+二次开发: 亦瑾 
 Awesome-Marp 原地址：[GitHub 库](https://github.com/favourhong/Awesome-Marp)/[Gitee 库](https://gitee.com/favourhong/Awesome-Marp)
 
 ## Awesome Marp 有什么？
@@ -143,7 +143,7 @@ Awesome-Marp 原地址：[GitHub 库](https://github.com/favourhong/Awesome-Marp
 
 @初虹 (虹鹄山庄) <ch2099058972@163.com>
 发布时间：2024 年 1 月 13 日（v1.3）
-二次开发: 亦瑾 (厦门大学 NICELab)
+二次开发: 亦瑾 
 Awesome-Marp 原地址：[GitHub 库](https://github.com/favourhong/Awesome-Marp)/[Gitee 库](https://gitee.com/favourhong/Awesome-Marp)
 
 ---
@@ -163,7 +163,7 @@ Awesome-Marp 原地址：[GitHub 库](https://github.com/favourhong/Awesome-Marp
 
 @初虹 (虹鹄山庄) <ch2099058972@163.com>
 发布时间：2024 年 1 月 13 日（v1.3）
-二次开发: 亦瑾 (厦门大学 NICELab)
+二次开发: 亦瑾 
 Awesome-Marp 原地址：[GitHub 库](https://github.com/favourhong/Awesome-Marp)/[Gitee 库](https://gitee.com/favourhong/Awesome-Marp)
 
 ---
@@ -178,7 +178,7 @@ Awesome-Marp 原地址：[GitHub 库](https://github.com/favourhong/Awesome-Marp
 
 @初虹 (虹鹄山庄) <ch2099058972@163.com>
 发布时间：2024 年 1 月 13 日（v1.3）
-二次开发: 亦瑾 (厦门大学 NICELab)
+二次开发: 亦瑾 
 Awesome-Marp 原地址：[GitHub 库](https://github.com/favourhong/Awesome-Marp)/[Gitee 库](https://gitee.com/favourhong/Awesome-Marp)
 
 ---
@@ -194,7 +194,7 @@ Awesome-Marp 原地址：[GitHub 库](https://github.com/favourhong/Awesome-Marp
 
 @初虹 (虹鹄山庄) <ch2099058972@163.com>
 发布时间：2024 年 1 月 13 日（v1.3）
-二次开发: 亦瑾 (厦门大学 NICELab)
+二次开发: 亦瑾 
 Awesome-Marp 原地址：[GitHub 库](https://github.com/favourhong/Awesome-Marp)/[Gitee 库](https://gitee.com/favourhong/Awesome-Marp)
 
 ## 3. 目录页
@@ -907,12 +907,4 @@ footer: 初虹 # 设置页脚区域的内容，如果设定页眉的内容，则
 
 <div>
 
-## 创作不易，buy me a coffee 🤙~
 
-<!-- _class: trans -->
-<!-- _footer: "" -->
-<!-- _paginate: "" -->
-
-<br>
-
-![#c w:300](https://mytuchuang-1303248785.cos.ap-beijing.myqcloud.com/picgo/202309240907419.png)
