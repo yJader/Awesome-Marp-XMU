@@ -1721,29 +1721,26 @@ section.fixedtitleA {
 
 section.fixedtitleB {
   justify-content: start;
-  display: grid;
-  gap: 1.5rem;
-  grid-template-rows: 10% 90%;
-  grid-template-areas:
-    "slideheading"
-    "content";
 }
 
 section.fixedtitleB>h2,
 section.fixedtitleB>h3,
 section.fixedtitleB>h4,
 section.fixedtitleB>h5 {
-  grid-area: slideheading;
-  position: absolute;
+  position: sticky;
+  top: 0;
+  z-index: 10;
   padding: 10px;
+  margin-bottom: 1rem;
   background-color: var(--color-much);
   color: white;
   border-radius: 8px;
   font-size: 1.25rem;
+  width: fit-content;
 }
 
 section.fixedtitleB .div {
-  grid-area: content;
+  /* 不再需要 grid-area */
 }
 
 section.fixedtitleB code {
