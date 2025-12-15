@@ -1015,15 +1015,19 @@ section.cols-2 .rdiv {
 section.cols-2 .limg {
   grid-column: 1;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 section.cols-2 .rimg {
   grid-column: 2;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 section.cols-3 {
@@ -1057,22 +1061,28 @@ section.cols-3 .rdiv {
 section.cols-3 .limg {
   grid-column: 1;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 section.cols-3 .mimg {
   grid-column: 2;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 section.cols-3 .rimg {
   grid-column: 3;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 section.cols-2-73 {
@@ -1102,15 +1112,19 @@ section.cols-2-73 .rdiv {
 section.cols-2-73 .limg {
   grid-column: 1;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 section.cols-2-73 .rimg {
   grid-column: 2;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 section.cols-2-64 {
@@ -1140,15 +1154,19 @@ section.cols-2-64 .rdiv {
 section.cols-2-64 .limg {
   grid-column: 1;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 section.cols-2-64 .rimg {
   grid-column: 2;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 section.cols-2-37 {
@@ -1178,15 +1196,19 @@ section.cols-2-37 .rdiv {
 section.cols-2-37 .limg {
   grid-column: 1;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 section.cols-2-37 .rimg {
   grid-column: 2;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 section.cols-2-46 {
@@ -1216,15 +1238,19 @@ section.cols-2-46 .rdiv {
 section.cols-2-46 .limg {
   grid-column: 1;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 section.cols-2-46 .rimg {
   grid-column: 2;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 section.rows-2 {
@@ -1255,15 +1281,19 @@ section.rows-2 .bdiv {
 section.rows-2 .timg {
   grid-area: toppanel;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 section.rows-2 .bimg {
   grid-area: bottompanel;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 section.pin-3 {
@@ -1299,22 +1329,28 @@ section.pin-3 .rdiv {
 section.pin-3 .timg {
   grid-area: toppanel;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 section.pin-3 .limg {
   grid-area: leftpanel;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 section.pin-3 .rimg {
   grid-area: rightpanel;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 
