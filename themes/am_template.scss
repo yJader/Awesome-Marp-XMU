@@ -677,13 +677,38 @@ section.toc_b img {
   filter: brightness(1000%) grayscale(100%);
 }
 
-section.fglass ul {
+section.fglass > ul {
   padding: 20px 20px 20px 60px;
   margin-left: -25px;
   border-radius: 0px 0px 20px 20px;
   border-top: 8px solid var(--color-navbar-font);
   background-color: white;
   box-shadow: 1px 1px 12px rgb(215, 224, 235);
+}
+
+section.fglass .ldiv,
+section.fglass .rdiv,
+section.fglass .mdiv,
+section.fglass .tdiv,
+section.fglass .bdiv {
+  padding: 20px;
+  margin-left: 0;
+  border-radius: 0px 0px 20px 20px;
+  border-top: 8px solid var(--color-navbar-font);
+  background-color: white;
+  box-shadow: 1px 1px 12px rgb(215, 224, 235);
+}
+
+section.fglass .ldiv ul,
+section.fglass .rdiv ul,
+section.fglass .mdiv ul,
+section.fglass .tdiv ul,
+section.fglass .bdiv ul {
+  padding: 20px 20px 20px 35px;
+  margin-left: 0;
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
 }
 
 
