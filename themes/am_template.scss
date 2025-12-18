@@ -1560,15 +1560,17 @@ section.lastpage div>ul {
   font-family: var(--font-family-main);
   width: 100%;
   display: grid;
-  grid-template-columns: 1.8fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 5em;
   align-content: center;
   list-style: none;
+  text-align: center;
 
 }
 
-section.lastpage ul>li>ul>li {
-  margin-left: -120px;
+section.lastpage ul>li>ul {
+  text-align: center;
+  padding-left: 0;
 }
 
 section.lastpage div>ul>li>ul>li {
