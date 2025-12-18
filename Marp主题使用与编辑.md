@@ -129,6 +129,17 @@ index.html:1  GET https://file+.vscode-resource.vscode-cdn.net/Users/jader/Work/
 <img src="./Marp主题使用与编辑.assets/YanamiAnna.png" alt="YanamiAnna" height="550" />
 
 </div>
+
+---
+
+### 插入图标
+
+因为Marp支持内嵌HTML, 可以使用[fontawesome](https://fontawesome.com/icons)去添加图标, 例如
+
+- <i class="fa-brands fa-fly"></i> 这是一个热气球
+- <i class="fa-solid fa-person-running"></i> 这是一个跑步的人
+- <i class="fa-brands fa-github"></i> 这是GitHub图标
+
 ---
 <!-- _class: lastpage -->
 
