@@ -265,6 +265,7 @@ Awesome-Marp 原地址：[GitHub 库](https://github.com/favourhong/Awesome-Marp
   - `cols-3`：[三列分栏，平分](#28)
   - `rows-2`：[两行分栏](#29)
   - `pin-3`：[品字型分栏](#30)
+  - `pin-3-inv`：[倒置品字型分栏](#31)
 
 - 如果某一栏为图片，可以将 `class=ldiv` 换成 `class=limg`，这样能够实现图片的垂直居中对齐呢（`class=ldiv` 为居上对齐）
 
@@ -468,16 +469,35 @@ Awesome-Marp 原地址：[GitHub 库](https://github.com/favourhong/Awesome-Marp
 ![#c h:260](https://mytuchuang-1303248785.cos.ap-beijing.myqcloud.com/picgo/202401131713779.png)
 </div>
 
+## 《宇宙的奥秘》（倒置品字型分栏）
+
+<!-- _class: pin-3-inv -->
+
+<div class="limg">
+
+![#c](https://mytuchuang-1303248785.cos.ap-beijing.myqcloud.com/picgo/202401131712626.png)
+</div>
+
+<div class="rimg">
+
+![#c h:260](https://mytuchuang-1303248785.cos.ap-beijing.myqcloud.com/picgo/202401131713779.png)
+</div>
+
+<div class="bdiv">
+
+> 四百年前，两位截然不同的科学家突破了当时已知世界的边界。1609 年在威尼斯，伽利略・伽利雷透过望远镜观察星辰，并制作仪器和进行实验。在布拉格，科班出身的神学家约翰内斯・开普勒发现了行星运动定律，奠定了近代天体物理学的基础，并思考着宇宙的宏伟构造。托马斯・德・帕多瓦以至今较少受到关注却扣人心弦的通信往来为基础，讲述了这两位类型如此迥异的学者之间不对等的关系，以及他们如何在同样的时刻却以各自的方式探索星辰的奥秘。在彼此的鉴照下，他们的远见与固执、睿智与无知得以呈现。这是一部介绍新科学的崛起以及近代来临之际的巨大变革的作品。  ——《宇宙的奥妙》
+</div>
+
 ## 4.2 页面分栏与列表分列：列表分列
 
 Awesome Marp v1.3 提供了 6 种列表分列的方式，分别为：
 
-- `cols2_ol_sq`：呈现效果为[有序列表 + 方形序号](#32)
-- `cols2_ol_ci`：呈现效果为[有序列表 + 圆形序号](#33)
-- `cols2_ul_sq`：呈现效果为[无序列表 + 方形序号](#34)
-- `cols2_ul_ci`：呈现效果为[无序列表 + 圆形序号](#35)
-- `col1_ul_sq`：呈现效果为[有序列表 + 方形序号](#36)
-- `col1_ul_ci`：呈现效应为[有序列表 + 圆形序号](#37)
+- `cols2_ol_sq`：呈现效果为[有序列表 + 方形序号](#33)
+- `cols2_ol_ci`：呈现效果为[有序列表 + 圆形序号](#34)
+- `cols2_ul_sq`：呈现效果为[无序列表 + 方形序号](#35)
+- `cols2_ul_ci`：呈现效果为[无序列表 + 圆形序号](#36)
+- `col1_ul_sq`：呈现效果为[有序列表 + 方形序号](#37)
+- `col1_ul_ci`：呈现效应为[有序列表 + 圆形序号](#38)
 
 ## 《微观经济学：现代观点》
 
@@ -607,11 +627,11 @@ Awesome Marp v1.3 提供了 6 种列表分列的方式，分别为：
   - [经管数据清洗与 Stata 实战：三大地级市数据库和 CSMAR 上市公司数据](https://mp.weixin.qq.com/s/D0cYVPJJsNiu61GcYwV6cg)
   - [Stata 基础：从论文文件夹体系的建立说起](https://mp.weixin.qq.com/s?__biz=MzkwOTE3NDExOQ==&mid=2247486489&idx=1&sn=2eb51e85a01541c7a552a9434e087512&scene=21#wechat_redirect)
 - Callouts 是 Awesome Marp 提供的自定义的样式，有 5 种颜色可选：
-  - [紫色](#40)：`bq-purple`
-  - [蓝色](#41)：`bq-blue`
-  - [绿色](#42)：`bq-green`
-  - [红色](#43)：`bq-red`
-  - [黑色](#44)：`bq-black`
+  - [紫色](#41)：`bq-purple`
+  - [蓝色](#42)：`bq-blue`
+  - [绿色](#43)：`bq-green`
+  - [红色](#44)：`bq-red`
+  - [黑色](#45)：`bq-black`
 
 ## 5. 引用、链接和引用盒子
 

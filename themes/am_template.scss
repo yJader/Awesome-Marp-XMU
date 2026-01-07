@@ -1503,6 +1503,78 @@ section.pin-3 .rimg {
   text-align: center;
 }
 
+/* 倒置品字型分栏: 上部两列，下部一列 */
+section.pin-3-inv {
+  overflow: visible;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 50% 50%;
+  position: relative;
+}
+
+section.pin-3-inv>* {
+  grid-column: 1 / -1;
+}
+
+section.pin-3-inv>footer {
+  position: absolute;
+  bottom: 1%;
+  left: 2%;
+  grid-column: auto;
+}
+
+section.pin-3-inv.navbar header {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin: 0;
+}
+
+section.pin-3-inv h2,
+section.pin-3-inv h3 {
+  font-size: var(--font-size-2-3);
+}
+
+section.pin-3-inv .ldiv {
+  grid-column: 1;
+}
+
+section.pin-3-inv .rdiv {
+  grid-column: 2;
+}
+
+section.pin-3-inv .bdiv {
+  grid-column: 1 / -1;
+}
+
+section.pin-3-inv .limg {
+  grid-column: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+section.pin-3-inv .rimg {
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+section.pin-3-inv .bimg {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 
 section.bq-blue blockquote,
 section.bq-red blockquote,
