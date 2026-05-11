@@ -1,0 +1,185 @@
+/* @theme am_claude */
+
+@import "am_template";
+
+:root {
+  /* Claude 网页设计风格 - 浅色主题 */
+  /* 主色: Claude 招牌珊瑚橙 (claude.ai 标志色) */
+  /*
+  层级    珊瑚橙 RGB         珊瑚橙 HEX
+  100%   R217 G119 B87     #D97757
+   90%   R221 G132 B104    #DD8468
+   80%   R225 G146 B121    #E19279
+   70%   R228 G160 B137    #E4A089
+   60%   R232 G173 B154    #E8AD9A
+   50%   R236 G187 B171    #ECBBAB
+   40%   R240 G201 B188    #F0C9BC
+   30%   R244 G214 B204    #F4D6CC
+   20%   R247 G228 B221    #F7E4DD
+   10%   R251 G241 B238    #FBF1EE
+  */
+  --color-claude-coral-100: #D97757;
+  --color-claude-coral-90:  #DD8468;
+  --color-claude-coral-80:  #E19279;
+  --color-claude-coral-70:  #E4A089;
+  --color-claude-coral-60:  #E8AD9A;
+  --color-claude-coral-50:  #ECBBAB;
+  --color-claude-coral-40:  #F0C9BC;
+  --color-claude-coral-30:  #F4D6CC;
+  --color-claude-coral-20:  #F7E4DD;
+  --color-claude-coral-10:  #FBF1EE;
+
+  /* 整体页面背景: Claude 标志性米白 */
+  --color-background: #FAF9F5;
+
+  /* 代码块背景色: 极浅珊瑚 */
+  --color-code-bg: var(--color-claude-coral-10);
+
+  /* 封面页背景色: 主色珊瑚橙 */
+  --color-coverbg: var(--color-claude-coral-100);
+
+  /* 重点强调色: 标题(h2-h5)、列表标记、引用边框、强调文字等 */
+  /* 用比主色更深的赭石橙, 在米白底上有足够对比度 */
+  --color-much: #C15F3C;
+
+  /* 过渡色: 用于特殊过渡效果 */
+  --color-trans: var(--color-claude-coral-80);
+
+  /* 少量元素强调色: 代码边框、滚动条等细节 */
+  --color-few: #8B5A3C;
+
+  /* 页脚文字颜色: 暖灰 */
+  --color-footer: #6B6562;
+
+  /* 主要文字颜色: 温暖深棕, 接近 claude.ai 正文色 */
+  --color-main: #2D2A26;
+
+  /* 导航栏背景色: 浅珊瑚 */
+  --color-navbar-bg: var(--color-claude-coral-20);
+
+  /* 导航栏字体颜色 */
+  --color-navbar-font: #6B5750;
+
+  /* 引用块背景色: 主色 8% 透明 */
+  --color-quote: rgba(217, 119, 87, 0.08);
+
+  /* 一级标题颜色: 白色, 用于珊瑚橙封面背景之上 */
+  --color-title: rgb(255, 255, 255);
+
+  /* 字体栈: 衬线标题 + 无衬线正文, 接近 Claude 视觉, 带中文回退 */
+  --font-family-main: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Helvetica Neue', 'Source Han Sans SC', '苹方', sans-serif;
+  --font-family-title: 'Tiempos Text', 'Charter', 'Georgia', 'Cambria', 'Source Han Serif SC', '思源宋体', 'Songti SC', '宋体', serif;
+  --font-family-footer: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Helvetica Neue', sans-serif;
+  --font-family-code: 'JetBrains Mono', 'Fira Code', 'SF Mono', 'Menlo', 'Source Han Mono SC', Consolas, monospace;
+
+  /* 图像滤镜效果 (沿用 am_xmu 设定) */
+  --filter-b: brightness(30%) contrast(70%) grayscale(100%);
+  --filter-c: brightness(0%) contrast(60%) grayscale(80%);
+  --filter-e: brightness(0%) contrast(70%) grayscale(100%);
+}
+
+/* 整体页面底色: Claude 标志性米白
+   am_template 的 section 没有显式声明 background-color, Marp 默认主题用纯白 #fff.
+   用 !important 确保覆盖 Marpit 默认主题里 section 的 background 简写. */
+section {
+  background-color: var(--color-background) !important;
+}
+
+/* 修正 am_template 中 cover_* / toc_b / lastpage 渐变里硬编码的 white,
+   让其与米白底协调 (cover_b 本身没有渐变, 自动继承 section 米白底) */
+section.cover_a {
+  background: linear-gradient(to bottom, var(--color-coverbg) 60%, var(--color-background) 40%);
+}
+
+section.cover_c {
+  background: linear-gradient(to bottom, var(--color-background) 20%, var(--color-coverbg) 20% 88%, var(--color-background) 88%);
+}
+
+section.cover_d {
+  background-image: linear-gradient(to bottom, var(--color-background) 5%, var(--color-coverbg) 5% 60%, var(--color-background) 60%);
+}
+
+section.cover_e {
+  background: linear-gradient(108deg, var(--color-background) 70%, var(--color-coverbg) 30%);
+}
+
+section.toc_b {
+  background: linear-gradient(to right, var(--color-background) 6%, var(--color-coverbg) 6% 30%, var(--color-background) 30%);
+}
+
+section.lastpage {
+  background: linear-gradient(to bottom, var(--color-background) 20%, var(--color-coverbg) 20% 60%, var(--color-background) 55%);
+}
+
+/* trans 过渡页: am_template 中 h2 用白色 (--color-title), 在 Claude 浅珊瑚底色上不可读.
+   单独覆盖为正文深棕色, 与米白底/浅珊瑚都有足够对比度. */
+section.trans h2 {
+  color: var(--color-main);
+}
+
+/* 在右上角添加 logo 占位 */
+/*
+  注意:
+  - Anthropic / Claude 商标不在本仓库分发范围.
+  - 若需要 logo, 请自行准备 svg 放入 themes/assets/claude_logo.svg.
+  - 若不需要 logo, 直接注释掉下面的 section::before block 即可.
+*/
+section::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  width: 160px;
+  height: 50px;
+
+  background-image: url("themes/assets/claude_logo.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+/* 封面页, 转折页, 封底页, 导航栏页的角落不显示 logo */
+section.cover_a::before,
+section.cover_b::before,
+section.cover_c::before,
+section.cover_d::before,
+section.cover_e::before,
+section.trans::before,
+section.navbar::before,
+section.lastpage::before {
+  content: none;
+}
+
+/* 为 cover_e 设置定位上下文 */
+section.cover_e {
+  position: relative !important;
+}
+
+section.cover_e footer {
+  position: absolute !important;
+  right: 3% !important;
+  bottom: 2% !important;
+  left: auto !important;
+}
+
+section.cover_e footer>img {
+  width: 300px;
+  height: auto;
+  max-height: 100px;
+  background-color: rgba(255, 255, 255, 0);
+  background-blend-mode: lighten;
+  filter: brightness(2000%) grayscale(60%);
+}
+
+section.cover_c header {
+  width: auto;
+  max-width: 50%;
+}
+
+section.cover_c img {
+  height: 90px;
+  width: auto;
+  filter: none !important;
+  background-color: transparent !important;
+  background-blend-mode: normal !important;
+}

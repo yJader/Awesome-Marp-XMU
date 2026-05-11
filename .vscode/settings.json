@@ -9,6 +9,7 @@
     "./themes/am_brown.scss",
     "./themes/am_purple.scss",
     "./themes/am_template.scss",
-    "./themes/am_xmu.scss"
+    "./themes/am_xmu.scss",
+    "./themes/am_claude.scss"
   ],
 }
