@@ -58,21 +58,24 @@ headingDivider: [2] # 自动根据标题级别添加分割线
 <!-- _footer: "![](./themes/assets/xmu_logo_name.svg)" -->
 ```
 
-2. 模板文件[am_xmu.scss](./themes/am_xmu.scss)的`section::before{background-image: url("themes/assets/xmu_logo_name.svg");}`
-   - 如果你觉得在每张图片右上角都加上logo不好看, 可以注释掉XD
+2. 在 Markdown 的 YAML 头部设置全局图片页眉，模板负责将普通页的校徽放到右上角：
+
+```yaml
+header: "![](./themes/assets/xmu_logo_name.svg)"
+```
+
+不设置 `header` 就不显示校徽；单页可用 `<!-- _header: "" -->` 隐藏。文字页眉和封面、目录、导航栏的专用布局不受普通页校徽样式影响。
 
 ---
 
 ##### <mark>注意</mark>: 主题资源文件路径问题
 
-- 对于主题需要用到的资源文件(如学校logo图片), 需要使用相对于markdown文件的路径(十分难用)or网络图片路径(如你的oss地址), 不能使用`./`**相对于scss文件**的路径
-- 例如, 在文件`Marp主题使用与编辑.md`中引用了`themes/am_xmu.scss`主题
-  - 在`am_xmu.scss`不能使用`background-image: url("./assets/xmu_logo.svg");`,
-  这样会被错误解析为`.../Awesome-Marp-XMU/assets/xmu_logo.svg`,
-  - 应该使用`background-image: url("themes/assets/xmu_logo.svg");`
-  这样会被正确解析为`.../Awesome-Marp-XMU/themes/assets/xmu_logo.svg`
+- 校徽路径现在写在 Markdown 的 `header` 中，相对于源文件解析，不再写入主题 SCSS。
+- 仓库根目录的文档使用 `./themes/assets/xmu_logo_name.svg`；`examples/` 或 `workspace/` 下的文档使用 `../themes/assets/xmu_logo_name.svg`。
+- CLI 导出 PDF/图片需要 `--allow-local-files`，并通过 `--theme-set themes/am_template.scss themes/am_xmu.scss` 同时加载两个主题。
+- 导出 HTML 建议放在 Markdown 同目录；移动或分享 HTML 时仍需携带图片并保持相对路径有效。
 
-以下是检查vscode控制台的报错信息:
+以下是旧版在主题中误用相对路径时的报错信息，供排查资源路径参考:
 
 ```log
 log.ts:460   ERR Webview.loadLocalResource - Error using fileReader. 

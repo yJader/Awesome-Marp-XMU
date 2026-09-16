@@ -5,6 +5,7 @@ theme: am_xmu
 paginate: true
 headingDivider: [2,3]
 math: true
+header: "![](../themes/assets/xmu_logo_name.svg)"
 footer: \ *亦瑾*
 ---
 
@@ -926,5 +927,4 @@ footer: 初虹 # 设置页脚区域的内容，如果设定页眉的内容，则
   - 公众号：虹鹄山庄
 
 <div>
-
 

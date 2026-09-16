@@ -71,38 +71,27 @@
   --filter-e: brightness(0%) contrast(70%) grayscale(100%);
 }
 
-/* 在右上角添加校徽 */
-section::before {
-  content: "";
-  position: absolute;
+/* 普通页的图片页眉作为右上角校徽，路径由 Markdown 的 header 指定。 */
+section:not(:is(.cover_a, .cover_b, .cover_c, .cover_d, .cover_e, .trans, .navbar, .lastpage, .toc_a, .toc_b))>header:has(> img:only-child) {
   top: 20px;
   right: 30px;
+  left: auto;
   width: 200px;
   height: 60px;
-
-  /* note: 因为路径问题, 此处svg经常不生效。
-    - 已支持Data URI嵌入；
-        若想自动替换, 取消`background-image: url("data:image/svg+xml;base64,__XMU_BASE64__");`注释后, 
-        运行仓库根目录下的 `scripts/embed_svg_base64.sh` 脚本。
-    - 更推荐托管图片到CDN/图床然后直接使用URL引用。
-    */
-  background-image: url("themes/assets/xmu_logo_name.svg");
-  /* background-image: url("data:image/svg+xml;base64,__XMU_BASE64__"); */
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: top right;
+  padding: 0;
 }
 
-/* 封面页, 转折页, 封底页, 导航栏页的角落不显示校徽 */
-section.cover_a::before,
-section.cover_b::before,
-section.cover_c::before,
-section.cover_d::before,
-section.cover_e::before,
-section.trans::before,
-section.navbar::before,
-section.lastpage::before {
-  content: none;
+section:not(:is(.cover_a, .cover_b, .cover_c, .cover_d, .cover_e, .trans, .navbar, .lastpage, .toc_a, .toc_b))>header>img:only-child {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: top right;
+}
+
+/* 保留 cover_c / cover_e 的专用图片页眉，其余特殊页隐藏全局校徽。 */
+section:is(.cover_a, .cover_b, .cover_d, .trans, .navbar, .lastpage)>header:has(> img:only-child) {
+  display: none;
 }
 
 /*

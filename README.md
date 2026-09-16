@@ -48,11 +48,27 @@
     marp: true
     # 选择am_xmu主题
     theme: am_xmu
+    # 路径相对于当前 Markdown 文件；本例假设文件位于仓库根目录
+    header: "![](./themes/assets/xmu_logo_name.svg)"
     ---
     ```
 
 4. 开始编写(可以提示AI使用Marp语法编写PPT, 高效快速)
     - 更详细的样式说明 请参考<mark>官方文档[Awesome Marp主题说明](./examples/AwesomeMarp_xmu.md)</mark>
+
+### 全局校徽
+
+`am_xmu` 将普通页中仅包含一张图片的 `header` 显示在右上角。图片路径相对于 Markdown 源文件；位于 `examples/` 或 `workspace/` 的文档使用 `header: "![](../themes/assets/xmu_logo_name.svg)"`。无需 Base64，也不占用 `footer`。
+
+不配置 `header` 就不显示校徽。单页可用 `<!-- _header: "" -->` 隐藏，或用 `<!-- _header: CONTENTS -->` 替换成文字。封面、目录及导航栏保留专用布局，`cover_c` / `cover_e` 仍可用局部图片页眉。
+
+CLI 导出需同时加载基础主题与 XMU 主题，并允许读取本地图片：
+
+```bash
+marp examples/AwesomeMarp_xmu.md --theme-set themes/am_template.scss themes/am_xmu.scss --html --allow-local-files --pdf
+```
+
+导出 HTML 时建议与 Markdown 放在同一目录；移到其他目录或分享时，需保持图片相对路径有效，并一同携带图片文件。PDF 中已渲染的校徽无需携带原图。
 
 ### 常见bug
 
