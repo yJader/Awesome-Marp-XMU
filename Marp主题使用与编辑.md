@@ -141,6 +141,22 @@ index.html:1  GET https://file+.vscode-resource.vscode-cdn.net/Users/jader/Work/
 - <i class="fa-brands fa-github"></i> 这是GitHub图标
 
 ---
+
+### Mermaid
+
+<div class="mermaid">
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+</div>
+
+<!-- mermaid.js -->
+<script src="https://unpkg.com/mermaid@8.1.0/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({startOnLoad:true});</script>
+
+---
 <!-- _class: lastpage -->
 
 ###### Thank You
