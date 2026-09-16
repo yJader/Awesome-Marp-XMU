@@ -1,0 +1,6 @@
+interface:
+  display_name: "Marp 汇报生成"
+  short_description: "将论文/PPT/笔记整理为 Marp 汇报幻灯片"
+  default_prompt: "使用 $marp-report-deck 将论文或PPT整理为 Marp 汇报幻灯片。"
+policy:
+  allow_implicit_invocation: true
