@@ -58,13 +58,13 @@ headingDivider: [2] # 自动根据标题级别添加分割线
 <!-- _footer: "![](./themes/assets/xmu_logo_name.svg)" -->
 ```
 
-2. 在 Markdown 的 YAML 头部设置全局图片页眉，模板负责将普通页的校徽放到右上角：
+2. 在 Markdown 的 YAML 头部设置全局页眉，模板将普通页的文字放在左上角、校徽放在右上角：
 
 ```yaml
-header: "![](./themes/assets/xmu_logo_name.svg)"
+header: "章节标题 ![](./themes/assets/xmu_logo_name.svg)"
 ```
 
-不设置 `header` 就不显示校徽；单页可用 `<!-- _header: "" -->` 隐藏。文字页眉和封面、目录、导航栏的专用布局不受普通页校徽样式影响。
+只写图片时只显示校徽，只写文字时保留左侧页眉。文字可加粗，图片应直接插入，不要包在链接或加粗标记内。单页可用 `<!-- _header: "" -->` 隐藏整条页眉；`_header` 会覆盖全局内容，若要改标题并保留校徽，请写 `<!-- _header: "实验结果 ![](./themes/assets/xmu_logo_name.svg)" -->`。封面、目录、导航栏保留专用布局。
 
 ---
 
@@ -89,12 +89,12 @@ index.html:1  GET https://file+.vscode-resource.vscode-cdn.net/Users/jader/Work/
 
 ---
 
-### 自定义cols-2图片位置 (False)
+### 图片过高的历史示例
 
 <!-- _class: cols-2 -->
 在下面的两列布局例子下, 图片过高
 如果直接使用`cols-2`类, 让二者对齐, 会要导致图表下移, 显示不全
-可以通过修改html`style="margin-top: -10rem;"`来适当上移图片
+常规处理应先限制图片高度、减少正文或调整原生布局，参见 [Agent 指南](themes/AGENT_GUIDE.md)。
 
 <div class="ldiv">
 
@@ -112,12 +112,12 @@ index.html:1  GET https://file+.vscode-resource.vscode-cdn.net/Users/jader/Work/
 
 ---
 
-### 自定义cols-2图片位置 (True)
+### 负 margin 定位：特殊补救手段
 
 <!-- _class: cols-2 -->
 在下面的两列布局例子下, 图片过高
 如果直接使用`cols-2`类, 让二者对齐, 会要导致图表下移, 显示不全
-可以通过修改html`style="margin-top: -10rem;"`来适当上移图片
+以下保留历史定位技巧；仅在原生布局与图片尺寸调整仍无法满足需求时使用，必须重新检查遮挡和溢出。
 
 <div class="ldiv">
 

@@ -71,26 +71,32 @@
   --filter-e: brightness(0%) contrast(70%) grayscale(100%);
 }
 
-/* 普通页的图片页眉作为右上角校徽，路径由 Markdown 的 header 指定。 */
-section:not(:is(.cover_a, .cover_b, .cover_c, .cover_d, .cover_e, .trans, .navbar, .lastpage, .toc_a, .toc_b))>header:has(> img:only-child) {
-  top: 20px;
-  right: 30px;
-  left: auto;
-  width: 200px;
-  height: 60px;
-  padding: 0;
+/* 普通页保留左侧文字页眉，并为右侧校徽预留空间。 */
+section:not(:is(.cover_a, .cover_b, .cover_c, .cover_d, .cover_e, .trans, .navbar, .lastpage, .toc_a, .toc_b))>header:has(> img:only-of-type) {
+  position: absolute !important;
+  top: 12px !important;
+  left: 30px !important;
+  right: 30px !important;
+  width: auto !important;
+  height: auto !important;
+  grid-column: auto;
+  padding-right: 220px;
+  overflow-wrap: anywhere;
 }
 
-section:not(:is(.cover_a, .cover_b, .cover_c, .cover_d, .cover_e, .trans, .navbar, .lastpage, .toc_a, .toc_b))>header>img:only-child {
+section:not(:is(.cover_a, .cover_b, .cover_c, .cover_d, .cover_e, .trans, .navbar, .lastpage, .toc_a, .toc_b))>header>img:only-of-type {
+  position: absolute;
+  top: 8px !important;
+  right: 0 !important;
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 200px;
+  height: 60px;
   object-fit: contain;
   object-position: top right;
 }
 
 /* 保留 cover_c / cover_e 的专用图片页眉，其余特殊页隐藏全局校徽。 */
-section:is(.cover_a, .cover_b, .cover_d, .trans, .navbar, .lastpage)>header:has(> img:only-child) {
+section:is(.cover_a, .cover_b, .cover_d, .trans, .navbar, .lastpage)>header:has(> img:only-of-type) {
   display: none;
 }
 
@@ -127,7 +133,6 @@ section.cover_e footer>img {
   max-height: 100px;
   background-color: rgba(255, 255, 255, 0);
   background-blend-mode: lighten;
-  filter: brightness(2000%) grayscale(60%);
 }
 
 section.cover_c header {

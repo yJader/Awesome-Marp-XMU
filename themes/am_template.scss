@@ -370,16 +370,26 @@ section.cover_e strong {
 
 section.cover_e footer>img {
   transform: scale(1.2);
+  max-width: 95%;
+  max-height: 100px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
   background-color: rgba(255, 255, 255, 0);
   background-blend-mode: lighten;
-  filter: brightness(2000%) grayscale(60%);
+  filter: brightness(0) invert(1);
 }
 
 section.cover_e header>img {
   transform: scale(0.88);
+  max-width: 95%;
+  max-height: 95%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
   background-color: rgba(255, 255, 255, 0);
   background-blend-mode: lighten;
-  filter: brightness(3000%) grayscale(100%);
+  filter: brightness(0) invert(1);
 }
 
 section.cover_e a::after {
@@ -681,7 +691,7 @@ section.toc_b img {
   background-blend-mode: lighten;
   padding-top: 30px;
   width: 70%;
-  filter: brightness(1000%) grayscale(100%);
+  filter: brightness(0) invert(1);
 }
 
 section.fglass>ul {
